@@ -39,13 +39,13 @@ export default function Footer1() {
                                     </div>
                                     <div className="footer-content">
                                         <p>
-                                        Qedami Software Solutions is a technology firm providing advanced, customized solutions for businesses. Specializing in software development, system integration, and IT consulting, Qedami uses the latest technology to optimize operations and drive growth.
+                                        Genshifter Software Solutions is a technology firm providing advanced, customized solutions for businesses. Specializing in software development, system integration, and IT consulting, Genshifter uses the latest technology to optimize operations and drive growth.
                                         </p>
                                         <div className="social-icon d-flex align-items-center">
                                         <Link href=" https://www.facebook.com/share/8nDYQiLdk45Ank1V/" target="_blank"><i className="fab fa-facebook-f" /></Link>
-                                    <Link href=" https://x.com/Qedamisolutions?t=SZm06VjW8VakIkaNYuaGeA&s=08" target="_blank"><i className="fab fa-twitter" /></Link>
-                                    <Link href=" https://t.me/QedamiSolution" target="_blank"><i className="fab fa-telegram" /></Link>
-                                    <Link href=" https://www.linkedin.com/company/qedami-software-solution-and-services/about/?viewAsMember=true" target="_blank"><i className="fab fa-linkedin-in" /></Link>
+                                    <Link href=" https://x.com/Genshiftersolutions?t=SZm06VjW8VakIkaNYuaGeA&s=08" target="_blank"><i className="fab fa-twitter" /></Link>
+                                    <Link href=" https://t.me/GenshifterSolution" target="_blank"><i className="fab fa-telegram" /></Link>
+                                    <Link href=" https://www.linkedin.com/company/Genshifter-software-solution-and-services/about/?viewAsMember=true" target="_blank"><i className="fab fa-linkedin-in" /></Link>
                                  </div>
                                     </div>
                                 </div>
@@ -59,7 +59,7 @@ export default function Footer1() {
                                         <li>
                                             <Link href="/about">
                                                 <i className="fa-solid fa-chevron-right" />
-                                                 About Qedami
+                                                 About Genshifter
                                             </Link>
                                         </li>
                                         <li>
@@ -123,7 +123,7 @@ export default function Footer1() {
                                             </li>
                                             <li>
                                                 <i className="fa-regular fa-envelope" />
-                                                <Link href="/mailto:infotech@gmail.com">info@qedamisolution.com
+                                                <Link href="/mailto:infotech@gmail.com">info@Genshiftersolution.com
                                                 </Link>
                                                
                                             </li>
@@ -159,7 +159,7 @@ export default function Footer1() {
                     <div className="container">
                         <div className="footer-wrapper d-flex align-items-center justify-content-between">
                             <p className="wow fadeInLeft color-2" data-wow-delay=".3s">
-                                <span style={{fontSize: '30px'}}>©</span> All Copyright {new Date().getFullYear()} by <Link href="/">Qedami Software Solution and Services</Link>
+                                <span style={{fontSize: '30px'}}>©</span> All Copyright {new Date().getFullYear()} by <Link href="/">Genshifter Software Solution and Services</Link>
                             </p>
                             <ul className="footer-menu wow fadeInRight" data-wow-delay=".5s">
                             <li>
@@ -188,7 +188,7 @@ export default function Footer1() {
                     <ol style={{ paddingLeft: '20px', color: '#444' }}>
                         <li>
                             <strong style={{ color: '#007bff' }}>Introduction</strong>
-                            <p>Welcome to Qedami Software Solution and Services ("Qedami," "we," "us," or "our"). This Privacy Policy explains how we collect, use, disclose, and protect your personal information when you access or use our website, products, or services. By using our services, you consent to the practices described in this Privacy Policy.</p>
+                            <p>Welcome to Genshifter Software Solution and Services ("Genshifter," "we," "us," or "our"). This Privacy Policy explains how we collect, use, disclose, and protect your personal information when you access or use our website, products, or services. By using our services, you consent to the practices described in this Privacy Policy.</p>
                         </li>
                         <li>
                             <strong style={{ color: '#007bff' }}>Information We Collect</strong>
@@ -215,7 +215,7 @@ export default function Footer1() {
                             <p>We may disclose your personal information to:</p>
                             <ul style={{ paddingLeft: '20px' }}>
                                 <li>Service Providers: Third-party vendors who perform services on our behalf, such as payment processing, data analysis, and customer support.</li>
-                                <li>Legal Requirements: To comply with legal obligations, enforce our Terms, or protect the rights, property, or safety of Qedami, our clients, or others.</li>
+                                <li>Legal Requirements: To comply with legal obligations, enforce our Terms, or protect the rights, property, or safety of Genshifter, our clients, or others.</li>
                                 <li>Business Transfers: In connection with a merger, acquisition, or sale of assets, where your information may be transferred as part of the transaction.</li>
                             </ul>
                         </li>
@@ -245,11 +245,11 @@ export default function Footer1() {
                         <li>
                             <strong style={{ color: '#007bff' }}>Contact Us</strong>
                             <p>If you have any questions or concerns about this Privacy Policy or our practices, please contact us at:</p>
-                            <p>Qedami Software Solution and Services<br />
-                            Email: <a href="mailto:info@qedamisolution.com" style={{ color: '#007bff' }}>info@qedamisolution.com</a><br />
+                            <p>Genshifter Software Solution and Services<br />
+                            Email: <a href="mailto:info@Genshiftersolution.com" style={{ color: '#007bff' }}>info@Genshiftersolution.com</a><br />
                             Phone: <a href="tel:+251910813571" style={{ color: '#007bff' }}>+251910813571</a><br />
                             Address: Bole, Lingo Tower, Addis Ababa, Ethiopia</p>
-                            <p>By using our services, you acknowledge that you have read, understood, and agree to this Privacy Policy. Thank you for choosing Qedami Software Solution and Services.</p>
+                            <p>By using our services, you acknowledge that you have read, understood, and agree to this Privacy Policy. Thank you for choosing Genshifter Software Solution and Services.</p>
                         </li>
                     </ol>
                     <menu style={{ position: 'absolute', right: 20, top: 20 }}>
@@ -282,7 +282,7 @@ export default function Footer1() {
             </p>
             <p className='text-dark'>
               These Terms and Conditions ("Terms") govern your access to and use
-              of Qedami Software Solution and Services ("Qedami," "we," "us," or
+              of Genshifter Software Solution and Services ("Genshifter," "we," "us," or
               "our"). By accessing or using our website, products, or services,
               you agree to be bound by these Terms. If you do not agree with
               these Terms, please do not use our services. These Terms affect
@@ -295,7 +295,7 @@ export default function Footer1() {
             <p className='text-dark'>
               By accessing or using any of our services, you agree to be bound
               by these Terms, which form a legally binding agreement between you
-              and Qedami. You agree to comply with all applicable laws, rules,
+              and Genshifter. You agree to comply with all applicable laws, rules,
               and regulations when using our services.
             </p>
 
@@ -306,11 +306,11 @@ export default function Footer1() {
               <li>
                 <strong>“Services”:</strong> The full range of software
                 development, IT consulting, maintenance, and related technology
-                solutions provided by Qedami.
+                solutions provided by Genshifter.
               </li>
               <li>
                 <strong>“Client”:</strong> Any individual, entity, or
-                organization that engages Qedami for its services.
+                organization that engages Genshifter for its services.
               </li>
               <li>
                 <strong>“Content”:</strong> Any data, information, software, or
@@ -322,7 +322,7 @@ export default function Footer1() {
               3. Modification of Terms
             </h3>
             <p className='text-dark'>
-              Qedami reserves the right to modify, amend, or update these Terms
+              Genshifter reserves the right to modify, amend, or update these Terms
               at any time. Changes will take effect immediately upon posting the
               updated Terms on our website. We recommend reviewing these Terms
               regularly to stay informed of any updates. Your continued use of
@@ -333,7 +333,7 @@ export default function Footer1() {
               4. Scope of Services
             </h3>
             <p className='text-dark'>
-              Qedami offers custom software development, IT consultancy, mobile
+              Genshifter offers custom software development, IT consultancy, mobile
               app development, and related technology services. The scope of
               services provided to each client will be defined in a mutually
               agreed-upon service agreement, contract, or proposal.
@@ -343,7 +343,7 @@ export default function Footer1() {
               4.1 Service Delivery
             </h4>
             <p className='text-dark'>
-              Qedami is committed to providing high-quality services. We make
+              Genshifter is committed to providing high-quality services. We make
               every reasonable effort to meet agreed-upon deadlines and deliver
               services as outlined in individual contracts. However, delivery
               timelines may be affected by factors beyond our control, including
@@ -355,7 +355,7 @@ export default function Footer1() {
               4.2 Service Modifications
             </h4>
             <p className='text-dark'>
-              Qedami reserves the right to modify or discontinue any part of our
+              Genshifter reserves the right to modify or discontinue any part of our
               services at any time without prior notice. Clients will be
               notified if such changes significantly affect ongoing projects.
             </p>
@@ -372,7 +372,7 @@ export default function Footer1() {
               5.1 Content and Data Sharing
             </h4>
             <p className='text-dark'>
-              Any content, data, or materials provided to Qedami for the
+              Any content, data, or materials provided to Genshifter for the
               completion of services must be free of intellectual property
               violations or other legal issues.
             </p>
@@ -381,10 +381,10 @@ export default function Footer1() {
               5.2 Collaboration
             </h4>
             <p className='text-dark'>
-              You agree to cooperate with Qedami by providing access to
+              You agree to cooperate with Genshifter by providing access to
               necessary systems, personnel, and information for successful
               project completion. Delays or failure to provide requested
-              resources may result in project delays, for which Qedami cannot be
+              resources may result in project delays, for which Genshifter cannot be
               held responsible.
             </p>
 
@@ -405,7 +405,7 @@ export default function Footer1() {
               6.2 Late Payments
             </h4>
             <p className='text-dark'>
-              In case of delayed payments, Qedami reserves the right to charge a
+              In case of delayed payments, Genshifter reserves the right to charge a
               late fee or interest at the rate specified in the service contract
               or invoice. Failure to pay outstanding balances may lead to
               suspension or termination of services.
@@ -413,8 +413,8 @@ export default function Footer1() {
 
             <h4 className='h6 font-weight-bold text-dark'>6.3 Taxes</h4>
             <p className='text-dark'>
-              All fees charged by Qedami will include any applicable sales, use,
-              VAT, or other taxes. Qedami is responsible for any applicable
+              All fees charged by Genshifter will include any applicable sales, use,
+              VAT, or other taxes. Genshifter is responsible for any applicable
               taxes associated with the purchase of services unless otherwise
               stated in the contract.
             </p>
@@ -423,12 +423,12 @@ export default function Footer1() {
               6.4 Ethiopian Tax and VAT
             </h4>
             <p className='text-dark'>
-              For services provided within Ethiopia, Qedami will comply with
+              For services provided within Ethiopia, Genshifter will comply with
               applicable Ethiopian tax laws, including Value Added Tax (VAT).
               All fees and payments will be subject to Ethiopian tax
               regulations, and the client agrees to bear any VAT or taxes
               imposed by the government of Ethiopia unless otherwise agreed in
-              writing. Qedami reserves the right to amend invoices and charge
+              writing. Genshifter reserves the right to amend invoices and charge
               the client for any applicable taxes that were not initially
               included due to oversight or later-imposed legal obligations.
             </p>
@@ -436,13 +436,13 @@ export default function Footer1() {
               7. Confidentiality and Data Protection
             </h3>
             <p className='text-dark'>
-              <strong>7.1 Confidential Information:</strong> Qedami agrees to
+              <strong>7.1 Confidential Information:</strong> Genshifter agrees to
               keep all client data, proprietary information, and sensitive
               business details confidential and will not disclose them to third
               parties unless required by law.
             </p>
             <p className='text-dark'>
-              <strong>7.2 Data Security:</strong> Qedami follows
+              <strong>7.2 Data Security:</strong> Genshifter follows
               industry-standard practices to secure client data against
               unauthorized access, loss, or misuse. However, no data
               transmission over the internet is 100% secure, and we cannot
@@ -454,15 +454,15 @@ export default function Footer1() {
             </h3>
             <p className='text-dark'>
               <strong>8.1 Ownership of Deliverables:</strong> All software,
-              applications, and technology created or provided by Qedami as part
-              of our services are the intellectual property of Qedami unless
+              applications, and technology created or provided by Genshifter as part
+              of our services are the intellectual property of Genshifter unless
               expressly transferred to the client through a separate written
               agreement.
             </p>
             <p className='text-dark'>
               <strong>8.2 License:</strong> Where applicable, clients will be
               granted a non-exclusive, non-transferable license to use the
-              software or applications developed by Qedami, subject to the terms
+              software or applications developed by Genshifter, subject to the terms
               specified in the service contract.
             </p>
 
@@ -470,7 +470,7 @@ export default function Footer1() {
               9. Warranties and Disclaimers
             </h3>
             <p className='text-dark'>
-              Qedami will provide warranties or guarantees as specified in the
+              Genshifter will provide warranties or guarantees as specified in the
               service agreement with the client or involved parties. These
               warranties will cover a specific period, depending on the nature
               of the services. The contract will outline the extent of these
@@ -482,13 +482,13 @@ export default function Footer1() {
               10. Limitation of Liability
             </h3>
             <p className='text-dark'>
-              Qedami shall not be held liable for any indirect, incidental,
+              Genshifter shall not be held liable for any indirect, incidental,
               special, or consequential damages, including loss of revenue,
               profits, data, or business opportunities, arising out of or in
               connection with the use of our services.
             </p>
             <p className='text-dark'>
-              Qedami's maximum liability shall be limited to the fees paid by
+              Genshifter's maximum liability shall be limited to the fees paid by
               the client for the specific service in question.
             </p>
 
@@ -496,7 +496,7 @@ export default function Footer1() {
               11. Indemnification
             </h3>
             <p className='text-dark'>
-              You agree to indemnify and hold harmless Qedami, its affiliates,
+              You agree to indemnify and hold harmless Genshifter, its affiliates,
               officers, directors, employees, and agents from any claims,
               liabilities, damages, or expenses arising out of your use of our
               services, breach of these Terms, or violation of any third-party
@@ -507,7 +507,7 @@ export default function Footer1() {
               12. Termination of Services
             </h3>
             <p className='text-dark'>
-              Qedami reserves the right to suspend or terminate access to our
+              Genshifter reserves the right to suspend or terminate access to our
               services at any time, with or without cause, including for
               violations of these Terms or non-payment of fees.
             </p>
@@ -516,7 +516,7 @@ export default function Footer1() {
               13. Force Majeure
             </h3>
             <p className='text-dark'>
-              Qedami will not be liable for any failure or delay in performing
+              Genshifter will not be liable for any failure or delay in performing
               our obligations due to unforeseen events beyond our reasonable
               control, including but not limited to acts of nature, war,
               strikes, or government actions.
@@ -544,8 +544,8 @@ export default function Footer1() {
             </h3>
             <p className='text-dark'>
               These Terms, along with any additional agreements or contracts you
-              enter into with Qedami, constitute the entire agreement between
-              you and Qedami and supersede any prior agreements.
+              enter into with Genshifter, constitute the entire agreement between
+              you and Genshifter and supersede any prior agreements.
             </p>
 
             <h3 className='h5 font-weight-bold text-dark'>
@@ -555,7 +555,7 @@ export default function Footer1() {
               For any questions or concerns, please contact us at:
             </p>
             <p className='text-dark'>
-              Email: info@qedamisolution.com
+              Email: info@Genshiftersolution.com
               <br />
               Phone: +251910813571
               <br />
@@ -581,12 +581,12 @@ export default function Footer1() {
 }
 const data = {
     company: {
-        name: "Qedami IT Solutions and Services",
-        description: "Qedami IT Solutions and Services offers a comprehensive range of IT services to drive business growth through innovative technology and expertise. We specialize in software development, managed services, infrastructure management, system integration, training, and cybersecurity.",
+        name: "Genshifter IT Solutions and Services",
+        description: "Genshifter IT Solutions and Services offers a comprehensive range of IT services to drive business growth through innovative technology and expertise. We specialize in software development, managed services, infrastructure management, system integration, training, and cybersecurity.",
         services: [
             {
                 title: "Software Development",
-                description: "At Qedami IT Solutions and Services, we offer a comprehensive range of software development solutions tailored to meet your unique business needs and drive growth through innovative technology and industry expertise. Our services include:",
+                description: "At Genshifter IT Solutions and Services, we offer a comprehensive range of software development solutions tailored to meet your unique business needs and drive growth through innovative technology and industry expertise. Our services include:",
                 subservices: [
                     {
                         name: "Custom Software Development",
@@ -628,7 +628,7 @@ const data = {
             },
             {
                 title: "Managed Services",
-                description: "At Qedami IT Solutions and Services, our Managed Services are designed to ensure your business operates smoothly and securely. We offer a comprehensive suite of services that includes IT Support and Helpdesk, Managed Network Services, Managed Security Services, and Managed Cloud Services. Our proactive approach to managing your IT infrastructure allows you to focus on driving your business forward with confidence.",
+                description: "At Genshifter IT Solutions and Services, our Managed Services are designed to ensure your business operates smoothly and securely. We offer a comprehensive suite of services that includes IT Support and Helpdesk, Managed Network Services, Managed Security Services, and Managed Cloud Services. Our proactive approach to managing your IT infrastructure allows you to focus on driving your business forward with confidence.",
                 subservices: [
                     {
                         name: "IT Support and Helpdesk",
@@ -670,7 +670,7 @@ const data = {
             },
             {
                 title: "Infrastructure Services",
-                description: "At Qedami IT Solutions and Services, we provide a full range of Infrastructure Services designed to optimize and enhance your IT infrastructure. Our offerings include Network Setup and Management, Server Installation and Maintenance, Cloud Services (IaaS, PaaS, SaaS), and Data Center Management. We focus on ensuring that your IT operations are robust, scalable, and efficient, enabling your business to thrive in a digital landscape.",
+                description: "At Genshifter IT Solutions and Services, we provide a full range of Infrastructure Services designed to optimize and enhance your IT infrastructure. Our offerings include Network Setup and Management, Server Installation and Maintenance, Cloud Services (IaaS, PaaS, SaaS), and Data Center Management. We focus on ensuring that your IT operations are robust, scalable, and efficient, enabling your business to thrive in a digital landscape.",
                 subservices: [
                     {
                         name: "Network Setup and Management",
@@ -712,7 +712,7 @@ const data = {
             },
             {
                 title: "System Integration",
-                description: "At Qedami IT Solutions and Services, our System Integration services are designed to provide seamless connectivity and enhance the efficiency of your IT environment. We specialize in API Integration, Enterprise Application Integration, and Middleware Development to unify your disparate systems and applications. Our goal is to ensure smooth data exchange, improved performance, and a cohesive IT ecosystem that drives your business forward.",
+                description: "At Genshifter IT Solutions and Services, our System Integration services are designed to provide seamless connectivity and enhance the efficiency of your IT environment. We specialize in API Integration, Enterprise Application Integration, and Middleware Development to unify your disparate systems and applications. Our goal is to ensure smooth data exchange, improved performance, and a cohesive IT ecosystem that drives your business forward.",
                 subservices: [
                     {
                         name: "API Integration",
@@ -745,7 +745,7 @@ const data = {
             },
             {
                 title: "Training and Development",
-                description: "At Qedami IT Solutions and Services, our Training and Development services are designed to empower your team with the knowledge and skills needed to leverage your technology effectively. We offer tailored programs in Technical Training, Software Training, and End-User Training to ensure enhanced proficiency and optimal utilization of your systems.",
+                description: "At Genshifter IT Solutions and Services, our Training and Development services are designed to empower your team with the knowledge and skills needed to leverage your technology effectively. We offer tailored programs in Technical Training, Software Training, and End-User Training to ensure enhanced proficiency and optimal utilization of your systems.",
                 subservices: [
                     {
                         name: "Technical Training",
@@ -778,7 +778,7 @@ const data = {
             },
             {
                 title: "Cybersecurity Services",
-                description: "At Qedami IT Solutions and Services, our Cybersecurity Services are designed to provide robust protection against digital threats and ensure the safety of your critical data and systems. Our comprehensive offerings include Security Audits and Assessments, Threat Detection and Response, Vulnerability Management, and Data Encryption and Protection. We implement advanced strategies to fortify your digital environment, proactively identify risks, and maintain the highest level of security.",
+                description: "At Genshifter IT Solutions and Services, our Cybersecurity Services are designed to provide robust protection against digital threats and ensure the safety of your critical data and systems. Our comprehensive offerings include Security Audits and Assessments, Threat Detection and Response, Vulnerability Management, and Data Encryption and Protection. We implement advanced strategies to fortify your digital environment, proactively identify risks, and maintain the highest level of security.",
                 subservices: [
                     {
                         name: "Security Audits and Assessments",

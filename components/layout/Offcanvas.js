@@ -25,7 +25,7 @@ export default function Offcanvas({
                                 </div>
                             </div>
                             <p className="text d-none d-lg-block">
-                            "Ready to get started with Qedami Software Solution and Services? Empower your business with our cutting-edge technology solutions, expert software development, and tailored IT services. Let us help you innovate and achieve your goals. Get started today!"                 </p>
+                            "Ready to get started with Genshifter Software Solution and Services? Empower your business with our cutting-edge technology solutions, expert software development, and tailored IT services. Let us help you innovate and achieve your goals. Get started today!"                 </p>
                             <div className="d-none d-md-block d-lg-none">
                                
                             </div>
@@ -48,7 +48,7 @@ export default function Offcanvas({
                                             <i className="fal fa-envelope" />
                                         </div>
                                         <div className="offcanvas__contact-text">
-                                            <Link href="/mailto:info@azent.com"><span className="mailto:info@qedamisolution.com">info@qedamisolution.com</span></Link>
+                                            <Link href="/mailto:info@azent.com"><span className="mailto:info@Genshiftersolution.com">info@Genshiftersolution.com</span></Link>
                                         </div>
                                     </li>
                                     <li className="d-flex align-items-center">
@@ -85,9 +85,9 @@ export default function Offcanvas({
                                 </div>
                                 <div className="social-icon d-flex align-items-center">
                                     <Link href=" https://www.facebook.com/share/8nDYQiLdk45Ank1V/" target="_blank"><i className="fab fa-facebook-f" /></Link>
-                                    <Link href=" https://x.com/Qedamisolutions?t=SZm06VjW8VakIkaNYuaGeA&s=08" target="_blank"><i className="fab fa-twitter" /></Link>
-                                    <Link href=" https://t.me/QedamiSolution" target="_blank"><i className="fab fa-telegram" /></Link>
-                                    <Link href=" https://www.linkedin.com/company/qedami-software-solution-and-services/about/?viewAsMember=true" target="_blank"><i className="fab fa-linkedin-in" /></Link>
+                                    <Link href=" https://x.com/Genshiftersolutions?t=SZm06VjW8VakIkaNYuaGeA&s=08" target="_blank"><i className="fab fa-twitter" /></Link>
+                                    <Link href=" https://t.me/GenshifterSolution" target="_blank"><i className="fab fa-telegram" /></Link>
+                                    <Link href=" https://www.linkedin.com/company/Genshifter-software-solution-and-services/about/?viewAsMember=true" target="_blank"><i className="fab fa-linkedin-in" /></Link>
                                 </div>
                             </div>
                         </div>

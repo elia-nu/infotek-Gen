@@ -83,13 +83,13 @@ export default function About1() {
                             <div className="col-lg-6 mt-4 mt-lg-0">
                                 <div className="about-content">
                                     <div className="section-title">
-                                        <span className="wow fadeInUp">ABOUT QEDAMI</span>
+                                        <span className="wow fadeInUp">ABOUT Genshifter</span>
                                         <h2 className="wow fadeInUp" data-wow-delay=".3s">
                                         We empower clients with innovative solutions that address their  <span>unique challenges.</span>
                                         </h2>
                                     </div>
                                     <p className="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                                     Qedami Software Solution and Services is a leading IT company based in Addis Ababa,
+                                     Genshifter Software Solution and Services is a leading IT company based in Addis Ababa,
                                      Ethiopia, dedicated to providing innovative software solutions and services to both                                      
                                      national and international clients. Since our inception, we have been committed to 
                                      delivering high-quality, customized software solutions that meet the unique needs of

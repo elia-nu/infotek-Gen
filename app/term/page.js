@@ -36,7 +36,7 @@ export default function TermsDialog() {
             </p>
             <p className='text-dark'>
               These Terms and Conditions ("Terms") govern your access to and use
-              of Qedami Software Solution and Services ("Qedami," "we," "us," or
+              of Genshifter Software Solution and Services ("Genshifter," "we," "us," or
               "our"). By accessing or using our website, products, or services,
               you agree to be bound by these Terms. If you do not agree with
               these Terms, please do not use our services. These Terms affect
@@ -49,7 +49,7 @@ export default function TermsDialog() {
             <p className='text-dark'>
               By accessing or using any of our services, you agree to be bound
               by these Terms, which form a legally binding agreement between you
-              and Qedami. You agree to comply with all applicable laws, rules,
+              and Genshifter. You agree to comply with all applicable laws, rules,
               and regulations when using our services.
             </p>
 
@@ -60,11 +60,11 @@ export default function TermsDialog() {
               <li>
                 <strong>“Services”:</strong> The full range of software
                 development, IT consulting, maintenance, and related technology
-                solutions provided by Qedami.
+                solutions provided by Genshifter.
               </li>
               <li>
                 <strong>“Client”:</strong> Any individual, entity, or
-                organization that engages Qedami for its services.
+                organization that engages Genshifter for its services.
               </li>
               <li>
                 <strong>“Content”:</strong> Any data, information, software, or
@@ -76,7 +76,7 @@ export default function TermsDialog() {
               3. Modification of Terms
             </h3>
             <p className='text-dark'>
-              Qedami reserves the right to modify, amend, or update these Terms
+              Genshifter reserves the right to modify, amend, or update these Terms
               at any time. Changes will take effect immediately upon posting the
               updated Terms on our website. We recommend reviewing these Terms
               regularly to stay informed of any updates. Your continued use of
@@ -87,7 +87,7 @@ export default function TermsDialog() {
               4. Scope of Services
             </h3>
             <p className='text-dark'>
-              Qedami offers custom software development, IT consultancy, mobile
+              Genshifter offers custom software development, IT consultancy, mobile
               app development, and related technology services. The scope of
               services provided to each client will be defined in a mutually
               agreed-upon service agreement, contract, or proposal.
@@ -97,7 +97,7 @@ export default function TermsDialog() {
               4.1 Service Delivery
             </h4>
             <p className='text-dark'>
-              Qedami is committed to providing high-quality services. We make
+              Genshifter is committed to providing high-quality services. We make
               every reasonable effort to meet agreed-upon deadlines and deliver
               services as outlined in individual contracts. However, delivery
               timelines may be affected by factors beyond our control, including
@@ -109,7 +109,7 @@ export default function TermsDialog() {
               4.2 Service Modifications
             </h4>
             <p className='text-dark'>
-              Qedami reserves the right to modify or discontinue any part of our
+              Genshifter reserves the right to modify or discontinue any part of our
               services at any time without prior notice. Clients will be
               notified if such changes significantly affect ongoing projects.
             </p>
@@ -126,7 +126,7 @@ export default function TermsDialog() {
               5.1 Content and Data Sharing
             </h4>
             <p className='text-dark'>
-              Any content, data, or materials provided to Qedami for the
+              Any content, data, or materials provided to Genshifter for the
               completion of services must be free of intellectual property
               violations or other legal issues.
             </p>
@@ -135,10 +135,10 @@ export default function TermsDialog() {
               5.2 Collaboration
             </h4>
             <p className='text-dark'>
-              You agree to cooperate with Qedami by providing access to
+              You agree to cooperate with Genshifter by providing access to
               necessary systems, personnel, and information for successful
               project completion. Delays or failure to provide requested
-              resources may result in project delays, for which Qedami cannot be
+              resources may result in project delays, for which Genshifter cannot be
               held responsible.
             </p>
 
@@ -159,7 +159,7 @@ export default function TermsDialog() {
               6.2 Late Payments
             </h4>
             <p className='text-dark'>
-              In case of delayed payments, Qedami reserves the right to charge a
+              In case of delayed payments, Genshifter reserves the right to charge a
               late fee or interest at the rate specified in the service contract
               or invoice. Failure to pay outstanding balances may lead to
               suspension or termination of services.
@@ -167,8 +167,8 @@ export default function TermsDialog() {
 
             <h4 className='h6 font-weight-bold text-dark'>6.3 Taxes</h4>
             <p className='text-dark'>
-              All fees charged by Qedami will include any applicable sales, use,
-              VAT, or other taxes. Qedami is responsible for any applicable
+              All fees charged by Genshifter will include any applicable sales, use,
+              VAT, or other taxes. Genshifter is responsible for any applicable
               taxes associated with the purchase of services unless otherwise
               stated in the contract.
             </p>
@@ -177,12 +177,12 @@ export default function TermsDialog() {
               6.4 Ethiopian Tax and VAT
             </h4>
             <p className='text-dark'>
-              For services provided within Ethiopia, Qedami will comply with
+              For services provided within Ethiopia, Genshifter will comply with
               applicable Ethiopian tax laws, including Value Added Tax (VAT).
               All fees and payments will be subject to Ethiopian tax
               regulations, and the client agrees to bear any VAT or taxes
               imposed by the government of Ethiopia unless otherwise agreed in
-              writing. Qedami reserves the right to amend invoices and charge
+              writing. Genshifter reserves the right to amend invoices and charge
               the client for any applicable taxes that were not initially
               included due to oversight or later-imposed legal obligations.
             </p>
@@ -190,13 +190,13 @@ export default function TermsDialog() {
               7. Confidentiality and Data Protection
             </h3>
             <p className='text-dark'>
-              <strong>7.1 Confidential Information:</strong> Qedami agrees to
+              <strong>7.1 Confidential Information:</strong> Genshifter agrees to
               keep all client data, proprietary information, and sensitive
               business details confidential and will not disclose them to third
               parties unless required by law.
             </p>
             <p className='text-dark'>
-              <strong>7.2 Data Security:</strong> Qedami follows
+              <strong>7.2 Data Security:</strong> Genshifter follows
               industry-standard practices to secure client data against
               unauthorized access, loss, or misuse. However, no data
               transmission over the internet is 100% secure, and we cannot
@@ -208,15 +208,15 @@ export default function TermsDialog() {
             </h3>
             <p className='text-dark'>
               <strong>8.1 Ownership of Deliverables:</strong> All software,
-              applications, and technology created or provided by Qedami as part
-              of our services are the intellectual property of Qedami unless
+              applications, and technology created or provided by Genshifter as part
+              of our services are the intellectual property of Genshifter unless
               expressly transferred to the client through a separate written
               agreement.
             </p>
             <p className='text-dark'>
               <strong>8.2 License:</strong> Where applicable, clients will be
               granted a non-exclusive, non-transferable license to use the
-              software or applications developed by Qedami, subject to the terms
+              software or applications developed by Genshifter, subject to the terms
               specified in the service contract.
             </p>
 
@@ -224,7 +224,7 @@ export default function TermsDialog() {
               9. Warranties and Disclaimers
             </h3>
             <p className='text-dark'>
-              Qedami will provide warranties or guarantees as specified in the
+              Genshifter will provide warranties or guarantees as specified in the
               service agreement with the client or involved parties. These
               warranties will cover a specific period, depending on the nature
               of the services. The contract will outline the extent of these
@@ -236,13 +236,13 @@ export default function TermsDialog() {
               10. Limitation of Liability
             </h3>
             <p className='text-dark'>
-              Qedami shall not be held liable for any indirect, incidental,
+              Genshifter shall not be held liable for any indirect, incidental,
               special, or consequential damages, including loss of revenue,
               profits, data, or business opportunities, arising out of or in
               connection with the use of our services.
             </p>
             <p className='text-dark'>
-              Qedami's maximum liability shall be limited to the fees paid by
+              Genshifter's maximum liability shall be limited to the fees paid by
               the client for the specific service in question.
             </p>
 
@@ -250,7 +250,7 @@ export default function TermsDialog() {
               11. Indemnification
             </h3>
             <p className='text-dark'>
-              You agree to indemnify and hold harmless Qedami, its affiliates,
+              You agree to indemnify and hold harmless Genshifter, its affiliates,
               officers, directors, employees, and agents from any claims,
               liabilities, damages, or expenses arising out of your use of our
               services, breach of these Terms, or violation of any third-party
@@ -261,7 +261,7 @@ export default function TermsDialog() {
               12. Termination of Services
             </h3>
             <p className='text-dark'>
-              Qedami reserves the right to suspend or terminate access to our
+              Genshifter reserves the right to suspend or terminate access to our
               services at any time, with or without cause, including for
               violations of these Terms or non-payment of fees.
             </p>
@@ -270,7 +270,7 @@ export default function TermsDialog() {
               13. Force Majeure
             </h3>
             <p className='text-dark'>
-              Qedami will not be liable for any failure or delay in performing
+              Genshifter will not be liable for any failure or delay in performing
               our obligations due to unforeseen events beyond our reasonable
               control, including but not limited to acts of nature, war,
               strikes, or government actions.
@@ -298,8 +298,8 @@ export default function TermsDialog() {
             </h3>
             <p className='text-dark'>
               These Terms, along with any additional agreements or contracts you
-              enter into with Qedami, constitute the entire agreement between
-              you and Qedami and supersede any prior agreements.
+              enter into with Genshifter, constitute the entire agreement between
+              you and Genshifter and supersede any prior agreements.
             </p>
 
             <h3 className='h5 font-weight-bold text-dark'>
@@ -309,7 +309,7 @@ export default function TermsDialog() {
               For any questions or concerns, please contact us at:
             </p>
             <p className='text-dark'>
-              Email: info@qedamisolution.com
+              Email: info@Genshiftersolution.com
               <br />
               Phone: +251910813571
               <br />

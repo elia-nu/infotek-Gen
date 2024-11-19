@@ -14,7 +14,7 @@ export default function Project() {
                 "Quality Assurance: Ensure high-quality production standards through partnerships with reputable print providers.",
                 "Timely Delivery: Rely on efficient logistics and tracking systems to guarantee that materials arrive on schedule, supporting your campaign timelines."
             ],
-            "image": "https://website.backend.qedamisolution.com/uploads/project/1723107907285-Screenshot_8-8-2024_12453_reactfirebase-88afa.web.app.jpeg" // Added image
+            "image": "https://website.backend.Genshiftersolution.com/uploads/project/1723107907285-Screenshot_8-8-2024_12453_reactfirebase-88afa.web.app.jpeg" // Added image
         },
         "Yeneta School": {
             "projectName": "Yeneta School",
@@ -28,7 +28,7 @@ export default function Project() {
                 "Seamless Integration: Ensure compatibility with existing systems and tools, promoting a cohesive technological environment.",
                 "Scalable Solutions: Adapt to the growing needs of the institution, accommodating more users and features as required."
             ],
-            "image": "https://website.backend.qedamisolution.com/uploads/project/1723106202271-Screenshot_8-8-2024_11364_yenetaschool.com.jpeg" // Added image
+            "image": "https://website.backend.Genshiftersolution.com/uploads/project/1723106202271-Screenshot_8-8-2024_11364_yenetaschool.com.jpeg" // Added image
         },
         "Company Profile Website": {
             "projectName": "Company Profile Website",
@@ -42,12 +42,12 @@ export default function Project() {
                 "Content Management: Effortlessly update and manage your company information, ensuring that all content is current and relevant.",
                 "Brand Consistency: Maintain a cohesive brand image across all digital platforms, reinforcing your company’s identity and values."
             ],
-            "image": "https://website.backend.qedamisolution.com/uploads/project/1723108337772-Screenshot_8-8-2024_121146_highlighttradings.com.jpeg" // Added image
+            "image": "https://website.backend.Genshiftersolution.com/uploads/project/1723108337772-Screenshot_8-8-2024_121146_highlighttradings.com.jpeg" // Added image
         },
         "Customizable ERP System": {
             "projectName": "Customizable ERP System",
             "Description": [
-                "At Qedami Software Solution and Services, we provide a fully customizable Enterprise Resource Planning (ERP) System tailored to meet the distinct needs of any industry. Our solution integrates various business processes into a seamless platform enhancing productivity and operational efficiency for organizations of all sizes from manufacturing and retail to healthcare and education.",
+                "At Genshifter Software Solution and Services, we provide a fully customizable Enterprise Resource Planning (ERP) System tailored to meet the distinct needs of any industry. Our solution integrates various business processes into a seamless platform enhancing productivity and operational efficiency for organizations of all sizes from manufacturing and retail to healthcare and education.",
                 "Our ERP system features comprehensive modules for finance, human resources, procurement, inventory, sales, and customer relationship management ensuring streamlined processes and data consistency across departments. By breaking down data silos, our system offers real-time visibility into essential financial and operational data empowering organizations to make informed decisions and optimize resource allocation.",
                 "Automation of repetitive tasks reduces manual effort and errors allowing employees to focus on high-value work. Advanced data analysis capabilities transform raw data into actionable insights while detailed reporting modules provide visual representations that help identify trends and optimize business processes.",
                 "Our ERP solution also simplifies financial management, integrates CRM capabilities, and enhances sales and marketing efforts ensuring a holistic approach to business operations."
@@ -64,7 +64,7 @@ export default function Project() {
         "School Management System (SMS)": {
             "projectName": "School Management System (SMS)",
             "Description": [
-                "Qedami Software Solution and Services presents the School Management System (SMS), a comprehensive and intuitive platform designed to streamline the daily operations of educational institutions. Our system provides a centralized solution for managing all aspects of school administration from student records and attendance tracking to academic performance monitoring and fee management.",
+                "Genshifter Software Solution and Services presents the School Management System (SMS), a comprehensive and intuitive platform designed to streamline the daily operations of educational institutions. Our system provides a centralized solution for managing all aspects of school administration from student records and attendance tracking to academic performance monitoring and fee management.",
                 "Our system enables schools to manage detailed student information including enrollment history, health records, and disciplinary actions. Teachers and administrators can easily access and update this information ensuring data is always up-to-date.",
                 "Additionally, SMS offers automated attendance tracking for both students and staff with the ability to generate detailed reports and send absence notifications to parents."
             ],
@@ -80,7 +80,7 @@ export default function Project() {
         "Sacco Management System": {
             "projectName": "Sacco Management System",
             "Description": [
-                "At Qedami Software Solution and Services, we introduce our Sacco Management System (SMS), a robust and user-friendly platform designed to streamline the operations of Savings and Credit Cooperative Organizations (Saccos). Our solution provides a comprehensive approach to managing all aspects of Sacco administration from member enrollment and loan management to financial reporting and member communication.",
+                "At Genshifter Software Solution and Services, we introduce our Sacco Management System (SMS), a robust and user-friendly platform designed to streamline the operations of Savings and Credit Cooperative Organizations (Saccos). Our solution provides a comprehensive approach to managing all aspects of Sacco administration from member enrollment and loan management to financial reporting and member communication.",
                 "Our SMS enables organizations to efficiently handle detailed member information including savings, loans, and repayment histories. Administrators can easily access and update this data ensuring that records are always accurate and current.",
                 "The SMS also automates loan application processing and approval workflows, significantly reducing the time taken to disburse loans and enhancing member satisfaction."
             ],
@@ -96,7 +96,7 @@ export default function Project() {
         "Document Management System (DMS)": {
             "projectName": "Document Management System (DMS)",
             "Description": [
-                "At Qedami Software Solution and Services, we are excited to present our Document Management System (DMS), a powerful and efficient solution designed to streamline the organization, storage, and retrieval of documents within any organization. Our DMS enhances productivity by providing a centralized platform for managing both digital and physical documents ensuring that information is easily accessible and securely stored.",
+                "At Genshifter Software Solution and Services, we are excited to present our Document Management System (DMS), a powerful and efficient solution designed to streamline the organization, storage, and retrieval of documents within any organization. Our DMS enhances productivity by providing a centralized platform for managing both digital and physical documents ensuring that information is easily accessible and securely stored.",
                 "Our Document Management System allows organizations to capture, store, and track documents throughout their lifecycle from creation to archival. With features that facilitate version control, audit trails, and document sharing, users can collaborate effectively while maintaining compliance with industry regulations."
             ],
             "Benefits": [
@@ -111,7 +111,7 @@ export default function Project() {
         "Company Management System (CMS)": {
             "projectName": "Company Management System (CMS)",
             "Description": [
-                "At Qedami Software Solution and Services, we are proud to introduce our Company Management System (CMS), a comprehensive platform designed to streamline the administration and operation of businesses across various industries. Our CMS provides an integrated approach to managing all aspects of a company from project management and employee performance to finance and customer relationship management.",
+                "At Genshifter Software Solution and Services, we are proud to introduce our Company Management System (CMS), a comprehensive platform designed to streamline the administration and operation of businesses across various industries. Our CMS provides an integrated approach to managing all aspects of a company from project management and employee performance to finance and customer relationship management.",
                 "The Company Management System enables organizations to centralize their operations, improve communication, and enhance overall efficiency. With features that support real-time reporting, task assignment, and resource allocation, our CMS helps businesses make informed decisions and drive growth."
             ],
             "Benefits": [
@@ -126,7 +126,7 @@ export default function Project() {
         "Job Portal": {
             "projectName": "Job Portal",
             "Description": [
-                "At Qedami Software Solution and Services, we are excited to present our Job Portal, a dynamic platform designed to connect job seekers with employers across various industries. Our Job Portal streamlines the recruitment process making it easier for organizations to find the right talent while providing job seekers with a user-friendly experience to search and apply for positions.",
+                "At Genshifter Software Solution and Services, we are excited to present our Job Portal, a dynamic platform designed to connect job seekers with employers across various industries. Our Job Portal streamlines the recruitment process making it easier for organizations to find the right talent while providing job seekers with a user-friendly experience to search and apply for positions.",
                 "The Job Portal enables companies to post job openings, manage applications, and track candidate progress all in one centralized location. For job seekers, the portal offers personalized job recommendations, application tracking, and resources to enhance their job search."
             ],
             "Benefits": [
@@ -141,7 +141,7 @@ export default function Project() {
         "Hospital Management System (HMS)": {
             "projectName": "Hospital Management System (HMS)",
             "Description": [
-                "At Qedami Software Solution and Services, we are proud to introduce our Hospital Management System (HMS), a comprehensive platform designed to enhance the operational efficiency of healthcare institutions. Our HMS streamlines the management of various hospital functions from patient admissions and appointment scheduling to billing and medical record management ensuring that healthcare providers can focus on delivering high-quality patient care.",
+                "At Genshifter Software Solution and Services, we are proud to introduce our Hospital Management System (HMS), a comprehensive platform designed to enhance the operational efficiency of healthcare institutions. Our HMS streamlines the management of various hospital functions from patient admissions and appointment scheduling to billing and medical record management ensuring that healthcare providers can focus on delivering high-quality patient care.",
                 "The Hospital Management System integrates critical processes into a single user-friendly interface enabling healthcare professionals to access real-time information and collaborate effectively across departments. With advanced features tailored to meet the needs of modern healthcare facilities, our HMS is a vital tool for improving patient outcomes and optimizing administrative workflows."
             ],
             "Benefits": [
@@ -156,7 +156,7 @@ export default function Project() {
         "Book Inventory and Distribution Management System (BIDMS)": {
             "projectName": "Book Inventory and Distribution Management System (BIDMS)",
             "Description": [
-                "At Qedami Software Solution and Services, we are excited to introduce our Book Inventory and Distribution Management System (BIDMS), a comprehensive solution designed to streamline the management of book inventories and distribution processes for libraries, bookstores, and educational institutions. Our system enhances operational efficiency ensuring that organizations can effectively track, manage, and distribute their book collections.",
+                "At Genshifter Software Solution and Services, we are excited to introduce our Book Inventory and Distribution Management System (BIDMS), a comprehensive solution designed to streamline the management of book inventories and distribution processes for libraries, bookstores, and educational institutions. Our system enhances operational efficiency ensuring that organizations can effectively track, manage, and distribute their book collections.",
                 "The Book Inventory and Distribution Management System provides a centralized platform for managing all aspects of book inventory from acquisition and cataloging to circulation and reporting. With features tailored to meet the needs of various stakeholders, our BIDMS simplifies workflows and improves accessibility to information."
             ],
             "Benefits": [
@@ -171,7 +171,7 @@ export default function Project() {
         "Customer Relationship Management (CRM) System": {
             "projectName": "Customer Relationship Management (CRM) System",
             "Description": [
-                "At Qedami Software Solution and Services, we proudly present our Customer Relationship Management (CRM) System, a powerful tool designed to enhance customer interactions, improve sales processes, and foster long-term relationships with clients. Our CRM solution provides a centralized platform for managing customer data, tracking interactions, and analyzing performance metrics, ensuring that organizations can deliver exceptional service and drive business growth.",
+                "At Genshifter Software Solution and Services, we proudly present our Customer Relationship Management (CRM) System, a powerful tool designed to enhance customer interactions, improve sales processes, and foster long-term relationships with clients. Our CRM solution provides a centralized platform for managing customer data, tracking interactions, and analyzing performance metrics, ensuring that organizations can deliver exceptional service and drive business growth.",
                 "The CRM System empowers businesses to streamline their sales and marketing efforts, enabling better communication across teams and a more personalized approach to customer engagement. With advanced features tailored to meet the unique needs of various industries, our CRM system is essential for building and maintaining successful customer relationships."
             ],
             "Benefits": [

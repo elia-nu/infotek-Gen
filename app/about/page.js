@@ -129,13 +129,13 @@ const goals = [
                                     <div className="col-lg-6 mt-4 mt-lg-0">
                                         <div className="about-content">
                                         <div className="section-title">
-                                        <span className="wow fadeInUp" style={{color: '#ea8c06'}}>ABOUT QEDAMI</span>
+                                        <span className="wow fadeInUp" style={{color: '#ea8c06'}}>ABOUT Genshifter</span>
                                         <h2 className="wow fadeInUp" data-wow-delay=".3s">
                                             We Are Increasing Business Success With <span>Technology</span>
                                         </h2>
                                     </div>
                                     <p className="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                                    Qedami Software Solution and Services is a leading IT company based in Addis Ababa, Ethiopia, dedicated to providing innovative software solutions and services to both national and international clients. Since our inception, we have been committed to delivering high-quality, customized software solutions that meet the unique needs of our clients across various industries.
+                                    Genshifter Software Solution and Services is a leading IT company based in Addis Ababa, Ethiopia, dedicated to providing innovative software solutions and services to both national and international clients. Since our inception, we have been committed to delivering high-quality, customized software solutions that meet the unique needs of our clients across various industries.
                                     </p>
                                     <p className="mt-2 mt-md-3 wow fadeInUp" data-wow-delay=".5s">
                                     Our team of highly skilled professionals is passionate about technology and innovation. We specialize in a wide range of IT services, including software development, system integration, IT consulting, and project management. Our goal is to help businesses leverage technology to improve efficiency, drive growth, and achieve their objectives.  </p>
@@ -244,15 +244,15 @@ const goals = [
         <div className="row  wow fadeInUp" data-wow-delay=".5s" style={{ height: '600px' }}>
           <div className="col-8 h-100 pe-2">
             <img
-              src='https://website.backend.qedamisolution.com/uploads/info/image4-1715447571688.jpg'
-              alt="Qedami team"
+              src='https://website.backend.Genshiftersolution.com/uploads/info/image4-1715447571688.jpg'
+              alt="Genshifter team"
               className="img-fluid h-100 w-100 rounded shadow"
               style={{ objectFit: 'cover' }}
             />
           </div>
           <div className="col-4 h-100 d-flex flex-column">
             <img
-              src='https://website.backend.qedamisolution.com/uploads/info/image3-1715447571680.jpg'
+              src='https://website.backend.Genshiftersolution.com/uploads/info/image3-1715447571680.jpg'
               alt="Office space"
               className="img-fluid mb-2 rounded shadow"
               style={{ objectFit: 'cover', height: '50%' }}
@@ -273,7 +273,7 @@ const goals = [
             Who We Are
           </h2>
           <p className="text-muted wow fadeInUp" data-wow-delay=".5s">
-            Qedami Software Solution and Services is a leading IT company
+            Genshifter Software Solution and Services is a leading IT company
             based in Addis Ababa, Ethiopia, dedicated to providing
             innovative software solutions and services to both national and
             international clients. Since our inception, we have been
