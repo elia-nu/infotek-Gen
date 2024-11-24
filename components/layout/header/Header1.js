@@ -20,7 +20,7 @@ export default function Header1({
                             <ul className="contact-list">
                                 <li>
                                     <i className="far fa-envelope" />
-                                    <Link href="/mailto:info@Genshiftersolution.com" className="link">info@Genshiftersolution.com</Link>
+                                    <Link href="/mailto:info@genshifter.com" className="link">info@genshifter.com</Link>
                                 </li>
                                 <li>
                                     <i className="fa-solid fa-phone-volume" />
@@ -35,9 +35,9 @@ export default function Header1({
                                 <div className="social-icon d-flex align-items-center">
                                     <span>Follow Us:</span>
                                     <Link href=" https://www.facebook.com/share/8nDYQiLdk45Ank1V/" target="_blank"><i className="fab fa-facebook-f" /></Link>
-                                    <Link href=" https://x.com/Genshiftersolutions?t=SZm06VjW8VakIkaNYuaGeA&s=08" target="_blank"><i className="fab fa-twitter" /></Link>
-                                    <Link href=" https://t.me/GenshifterSolution" target="_blank"><i className="fab fa-telegram" /></Link>
-                                    <Link href=" https://www.linkedin.com/company/Genshifter-software-solution-and-services/about/?viewAsMember=true" target="_blank"><i className="fab fa-linkedin-in" /></Link>
+                                    <Link href=" https://x.com/GenShiftersolutions?t=SZm06VjW8VakIkaNYuaGeA&s=08" target="_blank"><i className="fab fa-twitter" /></Link>
+                                    <Link href=" https://t.me/GenShifterSolution" target="_blank"><i className="fab fa-telegram" /></Link>
+                                    <Link href=" https://www.linkedin.com/company/GenShifter-software-solution-and-services/about/?viewAsMember=true" target="_blank"><i className="fab fa-linkedin-in" /></Link>
                                
                                 </div>
                             </div>

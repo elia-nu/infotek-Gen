@@ -33,7 +33,7 @@ export default function Testimonial1() {
                                                 <h2>What’s Clients Say </h2>
                                             </div>
                                             <p className="mt-3 mt-md-0">
-                                            "Genshifter Software Solution and Services has been a phenomenal partner in our software development journey. Their team took the time to understand our vision and translated it into a robust solution that exceeded our expectations. Their commitment to quality and innovation has been a key driver of our success."      </p>
+                                            "GenShifter Technologies. has been a phenomenal partner in our software development journey. Their team took the time to understand our vision and translated it into a robust solution that exceeded our expectations. Their commitment to quality and innovation has been a key driver of our success."      </p>
                                             <div className="author-details">
                                                 <h5>Biniyam Kabtamu</h5>
                                             
@@ -50,7 +50,7 @@ export default function Testimonial1() {
                                                 <h2>What’s Clients Say </h2>
                                             </div>
                                             <p className="mt-3 mt-md-0">
-                                            "The consultancy services from Genshifter have transformed how we approach our IT strategy. Their insights into best practices and effective solutions have helped us streamline operations and improve efficiency. We appreciate their professionalism and genuine interest in our growth."        </p>
+                                            "The consultancy services from GenShifter have transformed how we approach our IT strategy. Their insights into best practices and effective solutions have helped us streamline operations and improve efficiency. We appreciate their professionalism and genuine interest in our growth."        </p>
                                             <div className="author-details">
                                                 <h5>Mulugeta Awoke</h5>
                                             
@@ -67,7 +67,7 @@ export default function Testimonial1() {
                                                 <h2>What’s Clients Say </h2>
                                             </div>
                                             <p className="mt-3 mt-md-0">
-                                            "Genshifter Software Solution and Services has been a crucial ally in our mission. Their team provided expert guidance and support in optimizing our IT infrastructure, allowing us to focus on our community initiatives. Their dedication to our success is evident in every interaction."    </p>
+                                            "GenShifter Technologies. has been a crucial ally in our mission. Their team provided expert guidance and support in optimizing our IT infrastructure, allowing us to focus on our community initiatives. Their dedication to our success is evident in every interaction."    </p>
                                             <div className="author-details">
                                                 <h5>Alemu Gudeta</h5>
                                            

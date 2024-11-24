@@ -41,7 +41,7 @@ export default function Contact() {
                                                     <div className="content">
                                                         <p>Email us at</p>
                                                         <h3>
-                                                            <Link href="/mailto:info@Genshiftersolution.com">info@Genshiftersolution.com</Link>
+                                                            <Link href="/mailto:info@genshifter.com">info@genshifter.com</Link>
                                                         </h3>
                                                     </div>
                                                 </div>
@@ -55,7 +55,7 @@ export default function Contact() {
                                                     <div className="content">
                                                         <p>Location</p>
                                                         <h3>
-                                                        Lingo Tower Infront sheger Plaza Bole, Addis Ababa, Ethiopia
+                                                        Tigi's Building, 12th Floor, In Front of Dembel City Center, Bole Road
                                                         </h3>
                                                     </div>
                                                 </div>
@@ -70,7 +70,7 @@ export default function Contact() {
                                         <div className="contact-content">
                                             <h2>Ready to Get Started?</h2>
                                             <p>
-                                            "Ready to get started with Genshifter Software Solution and Services? Empower your business with our cutting-edge technology solutions, expert software development, and tailored IT services. Let us help you innovate and achieve your goals. Get started today!"
+                                            "Ready to get started with GenShifter Technologies.? Empower your business with our cutting-edge technology solutions, expert software development, and tailored IT services. Let us help you innovate and achieve your goals. Get started today!"
                                                     </p>
                                             <form action="contact.php" id="contact-form" method="POST" className="contact-form-items">
                                                 <div className="row g-4">

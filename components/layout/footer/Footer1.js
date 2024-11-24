@@ -39,13 +39,13 @@ export default function Footer1() {
                                     </div>
                                     <div className="footer-content">
                                         <p>
-                                        Genshifter Software Solutions is a technology firm providing advanced, customized solutions for businesses. Specializing in software development, system integration, and IT consulting, Genshifter uses the latest technology to optimize operations and drive growth.
+                                        GenShifter Software Solutions is a technology firm providing advanced, customized solutions for businesses. Specializing in software development, system integration, and IT consulting, GenShifter uses the latest technology to optimize operations and drive growth.
                                         </p>
                                         <div className="social-icon d-flex align-items-center">
                                         <Link href=" https://www.facebook.com/share/8nDYQiLdk45Ank1V/" target="_blank"><i className="fab fa-facebook-f" /></Link>
-                                    <Link href=" https://x.com/Genshiftersolutions?t=SZm06VjW8VakIkaNYuaGeA&s=08" target="_blank"><i className="fab fa-twitter" /></Link>
-                                    <Link href=" https://t.me/GenshifterSolution" target="_blank"><i className="fab fa-telegram" /></Link>
-                                    <Link href=" https://www.linkedin.com/company/Genshifter-software-solution-and-services/about/?viewAsMember=true" target="_blank"><i className="fab fa-linkedin-in" /></Link>
+                                    <Link href=" https://x.com/GenShiftersolutions?t=SZm06VjW8VakIkaNYuaGeA&s=08" target="_blank"><i className="fab fa-twitter" /></Link>
+                                    <Link href=" https://t.me/GenShifterSolution" target="_blank"><i className="fab fa-telegram" /></Link>
+                                    <Link href=" https://www.linkedin.com/company/GenShifter-software-solution-and-services/about/?viewAsMember=true" target="_blank"><i className="fab fa-linkedin-in" /></Link>
                                  </div>
                                     </div>
                                 </div>
@@ -59,7 +59,7 @@ export default function Footer1() {
                                         <li>
                                             <Link href="/about">
                                                 <i className="fa-solid fa-chevron-right" />
-                                                 About Genshifter
+                                                 About GenShifter
                                             </Link>
                                         </li>
                                         <li>
@@ -119,11 +119,11 @@ export default function Footer1() {
                                         <ul className="contact-info">
                                             <li>
                                                 <i className="fas fa-map-marker-alt" />
-                                                Lingo Tower Infront sheger Plaza Bole, Addis Ababa, Ethiopia
+                                                Tigi's Building, 12th Floor, In Front of Dembel City Center, Bole Road
                                             </li>
                                             <li>
                                                 <i className="fa-regular fa-envelope" />
-                                                <Link href="/mailto:infotech@gmail.com">info@Genshiftersolution.com
+                                                <Link href="/mailto:infotech@gmail.com">info@genshifter.com
                                                 </Link>
                                                
                                             </li>
@@ -159,7 +159,7 @@ export default function Footer1() {
                     <div className="container">
                         <div className="footer-wrapper d-flex align-items-center justify-content-between">
                             <p className="wow fadeInLeft color-2" data-wow-delay=".3s">
-                                <span style={{fontSize: '30px'}}>©</span> All Copyright {new Date().getFullYear()} by <Link href="/">Genshifter Software Solution and Services</Link>
+                                <span style={{fontSize: '30px'}}>©</span> All Copyright {new Date().getFullYear()} by <Link href="/">GenShifter Technologies.</Link>
                             </p>
                             <ul className="footer-menu wow fadeInRight" data-wow-delay=".5s">
                             <li>
@@ -188,7 +188,7 @@ export default function Footer1() {
                     <ol style={{ paddingLeft: '20px', color: '#444' }}>
                         <li>
                             <strong style={{ color: '#007bff' }}>Introduction</strong>
-                            <p>Welcome to Genshifter Software Solution and Services ("Genshifter," "we," "us," or "our"). This Privacy Policy explains how we collect, use, disclose, and protect your personal information when you access or use our website, products, or services. By using our services, you consent to the practices described in this Privacy Policy.</p>
+                            <p>Welcome to GenShifter Technologies. ("GenShifter," "we," "us," or "our"). This Privacy Policy explains how we collect, use, disclose, and protect your personal information when you access or use our website, products, or services. By using our services, you consent to the practices described in this Privacy Policy.</p>
                         </li>
                         <li>
                             <strong style={{ color: '#007bff' }}>Information We Collect</strong>
@@ -215,7 +215,7 @@ export default function Footer1() {
                             <p>We may disclose your personal information to:</p>
                             <ul style={{ paddingLeft: '20px' }}>
                                 <li>Service Providers: Third-party vendors who perform services on our behalf, such as payment processing, data analysis, and customer support.</li>
-                                <li>Legal Requirements: To comply with legal obligations, enforce our Terms, or protect the rights, property, or safety of Genshifter, our clients, or others.</li>
+                                <li>Legal Requirements: To comply with legal obligations, enforce our Terms, or protect the rights, property, or safety of GenShifter, our clients, or others.</li>
                                 <li>Business Transfers: In connection with a merger, acquisition, or sale of assets, where your information may be transferred as part of the transaction.</li>
                             </ul>
                         </li>
@@ -245,11 +245,11 @@ export default function Footer1() {
                         <li>
                             <strong style={{ color: '#007bff' }}>Contact Us</strong>
                             <p>If you have any questions or concerns about this Privacy Policy or our practices, please contact us at:</p>
-                            <p>Genshifter Software Solution and Services<br />
-                            Email: <a href="mailto:info@Genshiftersolution.com" style={{ color: '#007bff' }}>info@Genshiftersolution.com</a><br />
+                            <p>GenShifter Technologies.<br />
+                            Email: <a href="mailto:info@genshifter.com" style={{ color: '#007bff' }}>info@genshifter.com</a><br />
                             Phone: <a href="tel:+251910813571" style={{ color: '#007bff' }}>+251910813571</a><br />
                             Address: Bole, Lingo Tower, Addis Ababa, Ethiopia</p>
-                            <p>By using our services, you acknowledge that you have read, understood, and agree to this Privacy Policy. Thank you for choosing Genshifter Software Solution and Services.</p>
+                            <p>By using our services, you acknowledge that you have read, understood, and agree to this Privacy Policy. Thank you for choosing GenShifter Technologies..</p>
                         </li>
                     </ol>
                     <menu style={{ position: 'absolute', right: 20, top: 20 }}>
@@ -282,7 +282,7 @@ export default function Footer1() {
             </p>
             <p className='text-dark'>
               These Terms and Conditions ("Terms") govern your access to and use
-              of Genshifter Software Solution and Services ("Genshifter," "we," "us," or
+              of GenShifter Technologies. ("GenShifter," "we," "us," or
               "our"). By accessing or using our website, products, or services,
               you agree to be bound by these Terms. If you do not agree with
               these Terms, please do not use our services. These Terms affect
@@ -295,7 +295,7 @@ export default function Footer1() {
             <p className='text-dark'>
               By accessing or using any of our services, you agree to be bound
               by these Terms, which form a legally binding agreement between you
-              and Genshifter. You agree to comply with all applicable laws, rules,
+              and GenShifter. You agree to comply with all applicable laws, rules,
               and regulations when using our services.
             </p>
 
@@ -306,11 +306,11 @@ export default function Footer1() {
               <li>
                 <strong>“Services”:</strong> The full range of software
                 development, IT consulting, maintenance, and related technology
-                solutions provided by Genshifter.
+                solutions provided by GenShifter.
               </li>
               <li>
                 <strong>“Client”:</strong> Any individual, entity, or
-                organization that engages Genshifter for its services.
+                organization that engages GenShifter for its services.
               </li>
               <li>
                 <strong>“Content”:</strong> Any data, information, software, or
@@ -322,7 +322,7 @@ export default function Footer1() {
               3. Modification of Terms
             </h3>
             <p className='text-dark'>
-              Genshifter reserves the right to modify, amend, or update these Terms
+              GenShifter reserves the right to modify, amend, or update these Terms
               at any time. Changes will take effect immediately upon posting the
               updated Terms on our website. We recommend reviewing these Terms
               regularly to stay informed of any updates. Your continued use of
@@ -333,7 +333,7 @@ export default function Footer1() {
               4. Scope of Services
             </h3>
             <p className='text-dark'>
-              Genshifter offers custom software development, IT consultancy, mobile
+              GenShifter offers custom software development, IT consultancy, mobile
               app development, and related technology services. The scope of
               services provided to each client will be defined in a mutually
               agreed-upon service agreement, contract, or proposal.
@@ -343,7 +343,7 @@ export default function Footer1() {
               4.1 Service Delivery
             </h4>
             <p className='text-dark'>
-              Genshifter is committed to providing high-quality services. We make
+              GenShifter is committed to providing high-quality services. We make
               every reasonable effort to meet agreed-upon deadlines and deliver
               services as outlined in individual contracts. However, delivery
               timelines may be affected by factors beyond our control, including
@@ -355,7 +355,7 @@ export default function Footer1() {
               4.2 Service Modifications
             </h4>
             <p className='text-dark'>
-              Genshifter reserves the right to modify or discontinue any part of our
+              GenShifter reserves the right to modify or discontinue any part of our
               services at any time without prior notice. Clients will be
               notified if such changes significantly affect ongoing projects.
             </p>
@@ -372,7 +372,7 @@ export default function Footer1() {
               5.1 Content and Data Sharing
             </h4>
             <p className='text-dark'>
-              Any content, data, or materials provided to Genshifter for the
+              Any content, data, or materials provided to GenShifter for the
               completion of services must be free of intellectual property
               violations or other legal issues.
             </p>
@@ -381,10 +381,10 @@ export default function Footer1() {
               5.2 Collaboration
             </h4>
             <p className='text-dark'>
-              You agree to cooperate with Genshifter by providing access to
+              You agree to cooperate with GenShifter by providing access to
               necessary systems, personnel, and information for successful
               project completion. Delays or failure to provide requested
-              resources may result in project delays, for which Genshifter cannot be
+              resources may result in project delays, for which GenShifter cannot be
               held responsible.
             </p>
 
@@ -405,7 +405,7 @@ export default function Footer1() {
               6.2 Late Payments
             </h4>
             <p className='text-dark'>
-              In case of delayed payments, Genshifter reserves the right to charge a
+              In case of delayed payments, GenShifter reserves the right to charge a
               late fee or interest at the rate specified in the service contract
               or invoice. Failure to pay outstanding balances may lead to
               suspension or termination of services.
@@ -413,8 +413,8 @@ export default function Footer1() {
 
             <h4 className='h6 font-weight-bold text-dark'>6.3 Taxes</h4>
             <p className='text-dark'>
-              All fees charged by Genshifter will include any applicable sales, use,
-              VAT, or other taxes. Genshifter is responsible for any applicable
+              All fees charged by GenShifter will include any applicable sales, use,
+              VAT, or other taxes. GenShifter is responsible for any applicable
               taxes associated with the purchase of services unless otherwise
               stated in the contract.
             </p>
@@ -423,12 +423,12 @@ export default function Footer1() {
               6.4 Ethiopian Tax and VAT
             </h4>
             <p className='text-dark'>
-              For services provided within Ethiopia, Genshifter will comply with
+              For services provided within Ethiopia, GenShifter will comply with
               applicable Ethiopian tax laws, including Value Added Tax (VAT).
               All fees and payments will be subject to Ethiopian tax
               regulations, and the client agrees to bear any VAT or taxes
               imposed by the government of Ethiopia unless otherwise agreed in
-              writing. Genshifter reserves the right to amend invoices and charge
+              writing. GenShifter reserves the right to amend invoices and charge
               the client for any applicable taxes that were not initially
               included due to oversight or later-imposed legal obligations.
             </p>
@@ -436,13 +436,13 @@ export default function Footer1() {
               7. Confidentiality and Data Protection
             </h3>
             <p className='text-dark'>
-              <strong>7.1 Confidential Information:</strong> Genshifter agrees to
+              <strong>7.1 Confidential Information:</strong> GenShifter agrees to
               keep all client data, proprietary information, and sensitive
               business details confidential and will not disclose them to third
               parties unless required by law.
             </p>
             <p className='text-dark'>
-              <strong>7.2 Data Security:</strong> Genshifter follows
+              <strong>7.2 Data Security:</strong> GenShifter follows
               industry-standard practices to secure client data against
               unauthorized access, loss, or misuse. However, no data
               transmission over the internet is 100% secure, and we cannot
@@ -454,15 +454,15 @@ export default function Footer1() {
             </h3>
             <p className='text-dark'>
               <strong>8.1 Ownership of Deliverables:</strong> All software,
-              applications, and technology created or provided by Genshifter as part
-              of our services are the intellectual property of Genshifter unless
+              applications, and technology created or provided by GenShifter as part
+              of our services are the intellectual property of GenShifter unless
               expressly transferred to the client through a separate written
               agreement.
             </p>
             <p className='text-dark'>
               <strong>8.2 License:</strong> Where applicable, clients will be
               granted a non-exclusive, non-transferable license to use the
-              software or applications developed by Genshifter, subject to the terms
+              software or applications developed by GenShifter, subject to the terms
               specified in the service contract.
             </p>
 
@@ -470,7 +470,7 @@ export default function Footer1() {
               9. Warranties and Disclaimers
             </h3>
             <p className='text-dark'>
-              Genshifter will provide warranties or guarantees as specified in the
+              GenShifter will provide warranties or guarantees as specified in the
               service agreement with the client or involved parties. These
               warranties will cover a specific period, depending on the nature
               of the services. The contract will outline the extent of these
@@ -482,13 +482,13 @@ export default function Footer1() {
               10. Limitation of Liability
             </h3>
             <p className='text-dark'>
-              Genshifter shall not be held liable for any indirect, incidental,
+              GenShifter shall not be held liable for any indirect, incidental,
               special, or consequential damages, including loss of revenue,
               profits, data, or business opportunities, arising out of or in
               connection with the use of our services.
             </p>
             <p className='text-dark'>
-              Genshifter's maximum liability shall be limited to the fees paid by
+              GenShifter's maximum liability shall be limited to the fees paid by
               the client for the specific service in question.
             </p>
 
@@ -496,7 +496,7 @@ export default function Footer1() {
               11. Indemnification
             </h3>
             <p className='text-dark'>
-              You agree to indemnify and hold harmless Genshifter, its affiliates,
+              You agree to indemnify and hold harmless GenShifter, its affiliates,
               officers, directors, employees, and agents from any claims,
               liabilities, damages, or expenses arising out of your use of our
               services, breach of these Terms, or violation of any third-party
@@ -507,7 +507,7 @@ export default function Footer1() {
               12. Termination of Services
             </h3>
             <p className='text-dark'>
-              Genshifter reserves the right to suspend or terminate access to our
+              GenShifter reserves the right to suspend or terminate access to our
               services at any time, with or without cause, including for
               violations of these Terms or non-payment of fees.
             </p>
@@ -516,7 +516,7 @@ export default function Footer1() {
               13. Force Majeure
             </h3>
             <p className='text-dark'>
-              Genshifter will not be liable for any failure or delay in performing
+              GenShifter will not be liable for any failure or delay in performing
               our obligations due to unforeseen events beyond our reasonable
               control, including but not limited to acts of nature, war,
               strikes, or government actions.
@@ -544,8 +544,8 @@ export default function Footer1() {
             </h3>
             <p className='text-dark'>
               These Terms, along with any additional agreements or contracts you
-              enter into with Genshifter, constitute the entire agreement between
-              you and Genshifter and supersede any prior agreements.
+              enter into with GenShifter, constitute the entire agreement between
+              you and GenShifter and supersede any prior agreements.
             </p>
 
             <h3 className='h5 font-weight-bold text-dark'>
@@ -555,7 +555,7 @@ export default function Footer1() {
               For any questions or concerns, please contact us at:
             </p>
             <p className='text-dark'>
-              Email: info@Genshiftersolution.com
+              Email: info@genshifter.com
               <br />
               Phone: +251910813571
               <br />
@@ -581,12 +581,12 @@ export default function Footer1() {
 }
 const data = {
     company: {
-        name: "Genshifter IT Solutions and Services",
-        description: "Genshifter IT Solutions and Services offers a comprehensive range of IT services to drive business growth through innovative technology and expertise. We specialize in software development, managed services, infrastructure management, system integration, training, and cybersecurity.",
+        name: "GenShifter IT Solutions and Services",
+        description: "GenShifter IT Solutions and Services offers a comprehensive range of IT services to drive business growth through innovative technology and expertise. We specialize in software development, managed services, infrastructure management, system integration, training, and cybersecurity.",
         services: [
             {
                 title: "Software Development",
-                description: "At Genshifter IT Solutions and Services, we offer a comprehensive range of software development solutions tailored to meet your unique business needs and drive growth through innovative technology and industry expertise. Our services include:",
+                description: "At GenShifter IT Solutions and Services, we offer a comprehensive range of software development solutions tailored to meet your unique business needs and drive growth through innovative technology and industry expertise. Our services include:",
                 subservices: [
                     {
                         name: "Custom Software Development",
@@ -628,7 +628,7 @@ const data = {
             },
             {
                 title: "Managed Services",
-                description: "At Genshifter IT Solutions and Services, our Managed Services are designed to ensure your business operates smoothly and securely. We offer a comprehensive suite of services that includes IT Support and Helpdesk, Managed Network Services, Managed Security Services, and Managed Cloud Services. Our proactive approach to managing your IT infrastructure allows you to focus on driving your business forward with confidence.",
+                description: "At GenShifter IT Solutions and Services, our Managed Services are designed to ensure your business operates smoothly and securely. We offer a comprehensive suite of services that includes IT Support and Helpdesk, Managed Network Services, Managed Security Services, and Managed Cloud Services. Our proactive approach to managing your IT infrastructure allows you to focus on driving your business forward with confidence.",
                 subservices: [
                     {
                         name: "IT Support and Helpdesk",
@@ -670,7 +670,7 @@ const data = {
             },
             {
                 title: "Infrastructure Services",
-                description: "At Genshifter IT Solutions and Services, we provide a full range of Infrastructure Services designed to optimize and enhance your IT infrastructure. Our offerings include Network Setup and Management, Server Installation and Maintenance, Cloud Services (IaaS, PaaS, SaaS), and Data Center Management. We focus on ensuring that your IT operations are robust, scalable, and efficient, enabling your business to thrive in a digital landscape.",
+                description: "At GenShifter IT Solutions and Services, we provide a full range of Infrastructure Services designed to optimize and enhance your IT infrastructure. Our offerings include Network Setup and Management, Server Installation and Maintenance, Cloud Services (IaaS, PaaS, SaaS), and Data Center Management. We focus on ensuring that your IT operations are robust, scalable, and efficient, enabling your business to thrive in a digital landscape.",
                 subservices: [
                     {
                         name: "Network Setup and Management",
@@ -712,7 +712,7 @@ const data = {
             },
             {
                 title: "System Integration",
-                description: "At Genshifter IT Solutions and Services, our System Integration services are designed to provide seamless connectivity and enhance the efficiency of your IT environment. We specialize in API Integration, Enterprise Application Integration, and Middleware Development to unify your disparate systems and applications. Our goal is to ensure smooth data exchange, improved performance, and a cohesive IT ecosystem that drives your business forward.",
+                description: "At GenShifter IT Solutions and Services, our System Integration services are designed to provide seamless connectivity and enhance the efficiency of your IT environment. We specialize in API Integration, Enterprise Application Integration, and Middleware Development to unify your disparate systems and applications. Our goal is to ensure smooth data exchange, improved performance, and a cohesive IT ecosystem that drives your business forward.",
                 subservices: [
                     {
                         name: "API Integration",
@@ -745,7 +745,7 @@ const data = {
             },
             {
                 title: "Training and Development",
-                description: "At Genshifter IT Solutions and Services, our Training and Development services are designed to empower your team with the knowledge and skills needed to leverage your technology effectively. We offer tailored programs in Technical Training, Software Training, and End-User Training to ensure enhanced proficiency and optimal utilization of your systems.",
+                description: "At GenShifter IT Solutions and Services, our Training and Development services are designed to empower your team with the knowledge and skills needed to leverage your technology effectively. We offer tailored programs in Technical Training, Software Training, and End-User Training to ensure enhanced proficiency and optimal utilization of your systems.",
                 subservices: [
                     {
                         name: "Technical Training",
@@ -778,7 +778,7 @@ const data = {
             },
             {
                 title: "Cybersecurity Services",
-                description: "At Genshifter IT Solutions and Services, our Cybersecurity Services are designed to provide robust protection against digital threats and ensure the safety of your critical data and systems. Our comprehensive offerings include Security Audits and Assessments, Threat Detection and Response, Vulnerability Management, and Data Encryption and Protection. We implement advanced strategies to fortify your digital environment, proactively identify risks, and maintain the highest level of security.",
+                description: "At GenShifter IT Solutions and Services, our Cybersecurity Services are designed to provide robust protection against digital threats and ensure the safety of your critical data and systems. Our comprehensive offerings include Security Audits and Assessments, Threat Detection and Response, Vulnerability Management, and Data Encryption and Protection. We implement advanced strategies to fortify your digital environment, proactively identify risks, and maintain the highest level of security.",
                 subservices: [
                     {
                         name: "Security Audits and Assessments",

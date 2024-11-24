@@ -19,8 +19,8 @@ const kumbh = Kumbh_Sans({
 })
 
 export const metadata = {
-  title: 'Genshifter - software solution and services',
-  description: 'Genshifter - software solution and services',
+  title: 'GenShifter - Technologies.',
+  description: 'GenShifter - Technologies.',
 }
 
 export default function RootLayout({ children }) {

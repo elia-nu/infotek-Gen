@@ -22,7 +22,7 @@ export default function Header3({
                             <ul className="contact-list">
                                 <li>
                                     <i className="far fa-envelope" />
-                                    <Link href="/mailto:info@Genshiftersolution.com" className="link">info@Genshiftersolution.com</Link>
+                                    <Link href="/mailto:info@genshifter.com" className="link">info@genshifter.com</Link>
                                 </li>
                                 <li>
                                     <i className="fa-solid fa-phone-volume" />
