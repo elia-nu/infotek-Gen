@@ -244,7 +244,7 @@ const goals = [
         <div className="row  wow fadeInUp" data-wow-delay=".5s" style={{ height: '600px' }}>
           <div className="col-8 h-100 pe-2">
             <img
-              src='https://website.backend.GenShiftersolution.com/uploads/info/image4-1715447571688.jpg'
+              src='https://website.backend.qedamisolution.com/uploads/info/image4-1715447571688.jpg'
               alt="GenShifter team"
               className="img-fluid h-100 w-100 rounded shadow"
               style={{ objectFit: 'cover' }}
@@ -252,7 +252,7 @@ const goals = [
           </div>
           <div className="col-4 h-100 d-flex flex-column">
             <img
-              src='https://website.backend.GenShiftersolution.com/uploads/info/image3-1715447571680.jpg'
+              src='https://website.backend.qedamisolution.com/uploads/info/image3-1715447571680.jpg'
               alt="Office space"
               className="img-fluid mb-2 rounded shadow"
               style={{ objectFit: 'cover', height: '50%' }}

@@ -52,7 +52,7 @@ const projectDetailsArray = {
             "Quality Assurance: Ensure high-quality production standards through partnerships with reputable print providers.",
             "Timely Delivery: Rely on efficient logistics and tracking systems to guarantee that materials arrive on schedule, supporting your campaign timelines."
         ],
-        "image": "https://website.backend.GenShiftersolution.com/uploads/project/1723107907285-Screenshot_8-8-2024_12453_reactfirebase-88afa.web.app.jpeg" // Added image
+        "image": "https://website.backend.qedamisolution.com/uploads/project/1723107907285-Screenshot_8-8-2024_12453_reactfirebase-88afa.web.app.jpeg" // Added image
     },
     "Yeneta School": {
         "projectName": "Yeneta School",
@@ -66,7 +66,7 @@ const projectDetailsArray = {
             "Seamless Integration: Ensure compatibility with existing systems and tools, promoting a cohesive technological environment.",
             "Scalable Solutions: Adapt to the growing needs of the institution, accommodating more users and features as required."
         ],
-        "image": "https://website.backend.GenShiftersolution.com/uploads/project/1723106202271-Screenshot_8-8-2024_11364_yenetaschool.com.jpeg" // Added image
+        "image": "https://website.backend.qedamisolution.com/uploads/project/1723106202271-Screenshot_8-8-2024_11364_yenetaschool.com.jpeg" // Added image
     },
     "Company Profile Website": {
         "projectName": "Company Profile Website",
@@ -80,7 +80,7 @@ const projectDetailsArray = {
             "Content Management: Effortlessly update and manage your company information, ensuring that all content is current and relevant.",
             "Brand Consistency: Maintain a cohesive brand image across all digital platforms, reinforcing your company’s identity and values."
         ],
-        "image": "https://website.backend.GenShiftersolution.com/uploads/project/1723108337772-Screenshot_8-8-2024_121146_highlighttradings.com.jpeg" // Added image
+        "image": "https://website.backend.qedamisolution.com/uploads/project/1723108337772-Screenshot_8-8-2024_121146_highlighttradings.com.jpeg" // Added image
     },
     "Customizable ERP System": {
         "projectName": "Customizable ERP System",
