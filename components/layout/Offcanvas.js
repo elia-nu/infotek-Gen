@@ -84,10 +84,10 @@ export default function Offcanvas({
                                     </Link>
                                 </div>
                                 <div className="social-icon d-flex align-items-center">
-                                    <Link href=" https://www.facebook.com/share/8nDYQiLdk45Ank1V/" target="_blank"><i className="fab fa-facebook-f" /></Link>
-                                    <Link href=" https://x.com/GenShifterTechnologies?t=SZm06VjW8VakIkaNYuaGeA&s=08" target="_blank"><i className="fab fa-twitter" /></Link>
-                                    <Link href=" https://t.me/GenShifterTechnologies" target="_blank"><i className="fab fa-telegram" /></Link>
-                                    <Link href=" https://www.linkedin.com/company/GenShifter-software-solution-and-services/about/?viewAsMember=true" target="_blank"><i className="fab fa-linkedin-in" /></Link>
+                                    <Link href=" https://web.facebook.com/people/GenShifter-Technologies/61567964215142/?mibextid=ZbWKwL" target="_blank"><i className="fab fa-facebook-f" /></Link>
+                                    <Link href=" https://x.com/i/flow/login?redirect_after_login=%2Fgenshifter8" target="_blank"><i className="fab fa-twitter" /></Link>
+                                    <Link href=" https://t.me/GenShifter" target="_blank"><i className="fab fa-telegram" /></Link>
+                                    <Link href=" https://www.linkedin.com/company/genshifter-technologies/?viewAsMember=true" target="_blank"><i className="fab fa-linkedin-in" /></Link>
                                 </div>
                             </div>
                         </div>
