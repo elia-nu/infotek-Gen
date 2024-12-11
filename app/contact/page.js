@@ -55,7 +55,7 @@ export default function Contact() {
                                                     <div className="content">
                                                         <p>Location</p>
                                                         <h3>
-                                                        Tigi's Building, 12th Floor, In Front of Dembel City Center, Bole Road
+                                                        Bole Dembel, Tigi's Building, 12th Floor
                                                         </h3>
                                                     </div>
                                                 </div>

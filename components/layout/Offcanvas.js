@@ -40,7 +40,7 @@ export default function Offcanvas({
                                             <i className="fal fa-map-marker-alt" />
                                         </div>
                                         <div className="offcanvas__contact-text">
-                                            <Link target="_blank" href="#">Tigi's Building, 12th Floor, In Front of Dembel City Center, Bole Road</Link>
+                                            <Link target="_blank" href="#">Bole Dembel, Tigi's Building, 12th Floor</Link>
                                         </div>
                                     </li>
                                     <li className="d-flex align-items-center">

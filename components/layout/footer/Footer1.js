@@ -119,7 +119,7 @@ export default function Footer1() {
                                         <ul className="contact-info">
                                             <li>
                                                 <i className="fas fa-map-marker-alt" />
-                                                Tigi's Building, 12th Floor, In Front of Dembel City Center, Bole Road
+                                                Bole Dembel, Tigi's Building, 12th Floor
                                             </li>
                                             <li>
                                                 <i className="fa-regular fa-envelope" />
