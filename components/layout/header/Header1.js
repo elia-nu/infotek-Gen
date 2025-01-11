@@ -51,7 +51,7 @@ export default function Header1({
                                 <div className="header-left">
                                     <div className="logo">
                                         <Link href="/" className="header-logo bg-red-900 px-10" style={{ width: '00px' }}>
-                                            <img src="/assets/img/header/logo.png" style={{ width: '150px', marginLeft:'20px', marginTop:'-16px', marginBottom:'-30px' }} alt="logo-img" />
+                                            <img src="/assets/img/header/logo.png" style={{ width: '150px', }} alt="logo-img" />
                                         </Link>
                                     </div>
                                 </div>
