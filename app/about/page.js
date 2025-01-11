@@ -17,7 +17,7 @@ export default function About() {
     "dad"
   );
   useEffect(() => {
-    const fetchCareer = async () => {
+    const fetchAbout = async () => {
         try {
             const response = await fetch(`https://admin.z.genshifter.com/api/about`);
             if (!response.ok) {
