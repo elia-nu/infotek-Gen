@@ -1,7 +1,9 @@
+'use client'
 import Link from "next/link"
 import Menu from "../Menu"
 import OnePageNav from "../OnePageNav"
 import useStore from "../../../store/store"
+import { useEffect } from "react"
 export default function Header1({
     scroll,
     isOffCanvas,
