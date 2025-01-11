@@ -22,47 +22,58 @@ export default function Home() {
     const { setTeam, setTestimonials, setPartner, setAchievements, setAbout, setInfo, setContact, setWhyChooseUs, setCareer, setProject, setFaq, setService, setWhoWeAre, setOurGoal } = useStore()
 
     useEffect(() => {
-        const apiUrl = 'https://admin.z.genshifter.com'
-        
-        if (!apiUrl) {
-            console.error('API URL not configured')
-            return
-        }
-
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL
+      
+      if (!apiUrl) {
+        console.error('API URL not configured')
+        return
+      }
+  
+      const fetchAllData = () => {
         const endpoints = [
-            { path: '/api/team/', setter: setTeam, name: 'Team' },
-            { path: '/api/testimonial/', setter: setTestimonials, name: 'Testimonials' },
-            { path: '/api/partnership/', setter: setPartner, name: 'Partnership' },
-            { path: '/api/achievement/', setter: setAchievements, name: 'Achievements' },
-            { path: '/api/about/', setter: setAbout, name: 'About' },
-            { path: '/api/info/', setter: setInfo, name: 'Info' },
-            { path: '/api/contact/', setter: setContact, name: 'Contact' },
-            { path: '/api/why-choose-us/', setter: setWhyChooseUs, name: 'Why Choose Us' },
-            { path: '/api/career/', setter: setCareer, name: 'Career' },
-            { path: '/api/project/', setter: setProject, name: 'Project' },
-            { path: '/api/faq', setter: setFaq, name: 'FAQ' },
-            { path: '/api/service', setter: setService, name: 'Service' },
-            { path: '/api/who-we-are', setter: setWhoWeAre, name: 'Who We Are' },
-            { path: '/api/our-goal', setter: setOurGoal, name: 'Our Goal' }
+          { url: '/api/team/', setter: setTeam, name: 'Team' },
+          { url: '/api/testimonial/', setter: setTestimonials, name: 'Testimonials' },
+          { url: '/api/partnership/', setter: setPartner, name: 'Partnership' },
+          { url: '/api/achievement/', setter: setAchievements, name: 'Achievements' },
+          { url: '/api/about/', setter: setAbout, name: 'About' },
+          { url: '/api/info/', setter: setInfo, name: 'Info' },
+          { url: '/api/contact/', setter: setContact, name: 'Contact' },
+          { url: '/api/why-choose-us/', setter: setWhyChooseUs, name: 'Why Choose Us' },
+          { url: '/api/project/', setter: setProject, name: 'Project' },
+          { url: '/api/faq', setter: setFaq, name: 'FAQ' },
+          { url: '/api/service', setter: setService, name: 'Service' },
+          { url: '/api/who-we-are', setter: setWhoWeAre, name: 'Who We Are' },
+          { url: '/api/our-goal', setter: setOurGoal, name: 'Our Goal' }
         ]
-        const fetchData = async (endpoint) => {
-            try {
-                const response = await fetch(`${apiUrl}${endpoint.path}`);
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                const data = await response.json();
-                endpoint.setter(data);
-            } catch (error) {
-                console.error(`Error fetching ${endpoint.name.toLowerCase()} data:`, error);
-            }
-        };
-
-        // Fetch all data concurrently
-        Promise.all(endpoints.map(fetchData))
-
+  
+        endpoints.forEach(endpoint => {
+          fetch(`${apiUrl}${endpoint.url}`)
+            .then(response => {
+              if (!response.ok) {
+                throw new Error('Network response was not ok')
+              }
+              return response.json()
+            })
+            .then(data => {
+              endpoint.setter(data)
+              console.log(`${endpoint.name} data loaded:`, data)
+            })
+            .catch(error => console.error(`Error fetching ${endpoint.name}:`, error))
+        })
+      }
+  
+      // Initial fetch
+      fetchAllData()
+  
+      // Set up interval to fetch every 30 seconds
+      const interval = setInterval(fetchAllData, 30000)
+  
+      // Cleanup interval on component unmount
+      return () => clearInterval(interval)
+  
     }, [setTeam, setTestimonials, setPartner, setAchievements, setAbout, setInfo, setContact, setWhyChooseUs, setCareer, setProject, setFaq, setService, setWhoWeAre, setOurGoal])
-
+  
+  
     return (
         <>
             <Layout headerStyle={1} footerStyle={1}>
