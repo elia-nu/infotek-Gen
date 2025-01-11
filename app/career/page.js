@@ -22,7 +22,7 @@ export default function Career() {
     useEffect(() => {
         const fetchCareer = async () => {
             try {
-                const response = await fetch('/api/career');
+                const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/career`);
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }

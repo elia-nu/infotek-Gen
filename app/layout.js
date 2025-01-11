@@ -146,18 +146,6 @@ export default function RootLayout({ children }) {
       .catch(error => console.error('Error fetching why choose us:', error))
 
     // Fetch career data
-    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/career/`)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok')
-        }
-        return response.json()
-      })
-      .then(data => {
-        setCareer(data)
-        console.log('Career data loaded:', data)
-      })
-      .catch(error => console.error('Error fetching career:', error))
 
     // Fetch project data
     fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/project/`)
