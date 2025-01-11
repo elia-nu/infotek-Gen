@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    
-    output: 'export',
+    output: 'standalone',
     images: {
       unoptimized: true,  // If you are using Next.js Image Optimization
     },
@@ -27,6 +26,15 @@ const nextConfig = {
               value: 'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version',
             },
           ],
+        },
+      ];
+    },
+    // Add rewrites to handle API calls in production
+    async rewrites() {
+      return [
+        {
+          source: '/api/:path*',
+          destination: `${process.env.NEXT_PUBLIC_API_URL}/api/:path*`,
         },
       ];
     },
