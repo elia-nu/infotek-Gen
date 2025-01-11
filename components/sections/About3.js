@@ -12,7 +12,7 @@ export default function About3() {
     useEffect(() => {
         const fetchCareer = async () => {
             try {
-                const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/about`);
+                const response = await fetch(`https://admin.z.genshifter.com/api/about`);
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
