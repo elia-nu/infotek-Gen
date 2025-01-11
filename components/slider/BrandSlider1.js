@@ -1,11 +1,18 @@
-
 'use client'
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
+import useStore from '../../store/store'
+const brandImages = [
+    "/assets/img/brand1.png",
+    "/assets/img/brand2.png", 
+    "/assets/img/brand3.png",
+    "/assets/img/brand4.webp",
+    "/assets/img/brand5.png",
+    "/assets/img/brand6.png"
+]
 
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
-    // slidesPerView: 5,
     spaceBetween: 30,
     speed: 1300,
     loop: true,
@@ -14,7 +21,6 @@ const swiperOptions = {
         delay: 2000,
         disableOnInteraction: false,
     },
-
     breakpoints: {
         1199: {
             slidesPerView: 5,
@@ -33,101 +39,22 @@ const swiperOptions = {
         },
     },
 }
+
 export default function BrandSlider1() {
+    const { partner } = useStore()
     return (
         <>
             <div className="swiper brand-slider">
                 <Swiper {...swiperOptions} className="swiper-wrapper">
-                    <SwiperSlide>
-                        <div className="brand-image">
-                            <img src="/assets/img/brand1.png" alt="brand-img" />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="brand-image">
-                            <img src="/assets/img/brand2.png" alt="brand-img" />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="brand-image">
-                            <img src="/assets/img/brand3.png" alt="brand-img" />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="brand-image">
-                            <img src="/assets/img/brand4.webp" alt="brand-img" />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="brand-image">
-                            <img src="/assets/img/brand5.png" alt="brand-img" />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="brand-image">
-                            <img src="/assets/img/brand6.png" alt="brand-img" />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="brand-image">
-                            <img src="/assets/img/brand1.png" alt="brand-img" />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="brand-image">
-                            <img src="/assets/img/brand2.png" alt="brand-img" />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="brand-image">
-                            <img src="/assets/img/brand3.png" alt="brand-img" />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="brand-image">
-                            <img src="/assets/img/brand4.webp" alt="brand-img" />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="brand-image">
-                            <img src="/assets/img/brand5.png" alt="brand-img" />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="brand-image">
-                            <img src="/assets/img/brand6.png" alt="brand-img" />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="brand-image">
-                            <img src="/assets/img/brand1.png" alt="brand-img" />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="brand-image">
-                            <img src="/assets/img/brand2.png" alt="brand-img" />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="brand-image">
-                            <img src="/assets/img/brand3.png" alt="brand-img" />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="brand-image">
-                            <img src="/assets/img/brand4.webp" alt="brand-img" />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="brand-image">
-                            <img src="/assets/img/brand5.png" alt="brand-img" />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="brand-image">
-                            <img src="/assets/img/brand6.png" alt="brand-img" />
-                        </div>
-                    </SwiperSlide>
+                    {[...Array(3)].map((_, i) => (
+                        partner.map((item, index) => (
+                            <SwiperSlide key={`${i}-${index}`}>
+                                <div className="brand-image">
+                                    <img src={`${process.env.NEXT_PUBLIC_API_URL}/${item.image}`} alt="brand-img" />
+                                </div>
+                            </SwiperSlide>
+                        ))
+                    ))}
                 </Swiper>
             </div>
         </>

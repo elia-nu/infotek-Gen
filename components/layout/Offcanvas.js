@@ -1,11 +1,14 @@
 'use client'
 import Link from "next/link"
 import MobileMenu from "./MobileMenu"
+import useStore from "@/store/store"
+
 
 export default function Offcanvas({
     isOffCanvas,
     handleOffCanvas,
 }) {
+    const { contact ,info ,service } = useStore()
     return (
         <>
             <div className="fix-area">
@@ -40,7 +43,7 @@ export default function Offcanvas({
                                             <i className="fal fa-map-marker-alt" />
                                         </div>
                                         <div className="offcanvas__contact-text">
-                                            <Link target="_blank" href="#">Bole Dembel, Tigi's Building, 12th Floor</Link>
+                                            <Link target="_blank" href="#">{contact[0]?.address}</Link>
                                         </div>
                                     </li>
                                     <li className="d-flex align-items-center">
@@ -48,7 +51,7 @@ export default function Offcanvas({
                                             <i className="fal fa-envelope" />
                                         </div>
                                         <div className="offcanvas__contact-text">
-                                            <Link href="/mailto:info@azent.com"><span className="mailto:info@genshifter.com">info@genshifter.com</span></Link>
+                                            <Link href={`mailto:${contact[0]?.email}`}><span className="mailto:info@genshifter.com">{contact[0]?.email}</span></Link>
                                         </div>
                                     </li>
                                     <li className="d-flex align-items-center">
@@ -64,7 +67,7 @@ export default function Offcanvas({
                                             <i className="far fa-phone" />
                                         </div>
                                         <div className="offcanvas__contact-text ">
-                                            <Link href="/tel:+251910813571">+251-91-081-3571</Link>
+                                            <Link href={`tel:${contact[0]?.phone1}`}>{contact[0]?.phone1}</Link>
                                     
                                         </div>
                                     </li>
@@ -74,7 +77,7 @@ export default function Offcanvas({
                                         </div>
                                         <div className="offcanvas__contact-text ">
                                          
-                                            <Link href="/tel:+251910813571">+1 206 353 5373</Link>
+                                            <Link href={`tel:${contact[0]?.phone2}`}>{contact[0]?.phone2}</Link>
                                         </div>
                                     </li>
                                 </ul>
@@ -84,10 +87,10 @@ export default function Offcanvas({
                                     </Link>
                                 </div>
                                 <div className="social-icon d-flex align-items-center">
-                                    <Link href=" https://web.facebook.com/people/GenShifter-Technologies/61567964215142/?mibextid=ZbWKwL" target="_blank"><i className="fab fa-facebook-f" /></Link>
-                                    <Link href=" https://x.com/i/flow/login?redirect_after_login=%2Fgenshifter8" target="_blank"><i className="fab fa-twitter" /></Link>
-                                    <Link href=" https://t.me/GenShifter" target="_blank"><i className="fab fa-telegram" /></Link>
-                                    <Link href=" https://www.linkedin.com/company/genshifter-technologies/?viewAsMember=true" target="_blank"><i className="fab fa-linkedin-in" /></Link>
+                                <Link href={`${contact[0]?.facebook}`} target="_blank"><i className="fab fa-facebook-f" /></Link>
+                                    <Link href={`${contact[0]?.twitter}`} target="_blank"><i className="fab fa-twitter" /></Link>
+                                    <Link href={`${contact[0]?.telegram}`} target="_blank"><i className="fab fa-telegram" /></Link>
+                                    <Link href={`${contact[0]?.linkedin}`} target="_blank"><i className="fab fa-linkedin-in" /></Link>
                                 </div>
                             </div>
                         </div>

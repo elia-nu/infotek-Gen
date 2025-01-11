@@ -1,12 +1,68 @@
-
+"use client"
 import VideoPopup from "@/components/elements/VideoPopup"
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+import useStore from "../../store/store"
+import { useState } from "react"
+import Swal from 'sweetalert2'
+
 export default function Contact() {
+    const { contact } = useStore()
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+    })
+
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        try {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/contact-us`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+            if (response.ok) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Success!',
+                    text: 'Message sent successfully!'
+                })
+                setFormData({
+                    name: '',
+                    email: '',
+                    phone: '',
+                    message: ''
+                })
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Failed to send message'
+                })
+            }
+        } catch (error) {
+            console.error('Error:', error)
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Failed to send message'
+            })
+        }
+    }
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        })
+    }
 
     return (
         <>
-
             <Layout headerStyle={1} footerStyle={2} breadcrumbTitle="Contact Us">
                 <div>
                     <section className="contact-section fix section-padding">
@@ -26,7 +82,7 @@ export default function Contact() {
                                                     <div className="content">
                                                         <p>Call Us 7/24</p>
                                                         <h3>
-                                                            <Link href="/tel:+12063535373">+1-206-353-5373</Link>
+                                                            <Link href="/tel:+12063535373">{contact[0]?.phone1}</Link>
                                                         </h3>
                                                     </div>
                                                 </div>
@@ -41,7 +97,7 @@ export default function Contact() {
                                                     <div className="content">
                                                         <p>Email us at</p>
                                                         <h3>
-                                                            <Link href="/mailto:info@genshifter.com">info@genshifter.com</Link>
+                                                            <Link href="/mailto:info@genshifter.com">{contact[0]?.email}</Link>
                                                         </h3>
                                                     </div>
                                                 </div>
@@ -55,7 +111,7 @@ export default function Contact() {
                                                     <div className="content">
                                                         <p>Location</p>
                                                         <h3>
-                                                        Bole Dembel, Tigi's Building, 12th Floor
+                                                        {contact[0]?.address}
                                                         </h3>
                                                     </div>
                                                 </div>
@@ -72,24 +128,57 @@ export default function Contact() {
                                             <p>
                                             "Ready to get started with GenShifter Technologies.? Empower your business with our cutting-edge technology solutions, expert software development, and tailored IT services. Let us help you innovate and achieve your goals. Get started today!"
                                                     </p>
-                                            <form action="contact.php" id="contact-form" method="POST" className="contact-form-items">
+                                            <form onSubmit={handleSubmit} className="contact-form-items">
                                                 <div className="row g-4">
                                                     <div className="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                                                         <div className="form-clt">
                                                             <span>Your name*</span>
-                                                            <input type="text" name="name" id="name" placeholder="Your Name" />
+                                                            <input 
+                                                                type="text" 
+                                                                name="name" 
+                                                                value={formData.name}
+                                                                onChange={handleChange}
+                                                                placeholder="Your Name" 
+                                                                required 
+                                                            />
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
                                                         <div className="form-clt">
                                                             <span>Your Email*</span>
-                                                            <input type="text" name="email" id="email" placeholder="Your Email" />
+                                                            <input 
+                                                                type="email" 
+                                                                name="email" 
+                                                                value={formData.email}
+                                                                onChange={handleChange}
+                                                                placeholder="Your Email" 
+                                                                required 
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-lg-12 wow fadeInUp" data-wow-delay=".5s">
+                                                        <div className="form-clt">
+                                                            <span>Your Phone*</span>
+                                                            <input 
+                                                                type="tel" 
+                                                                name="phone" 
+                                                                value={formData.phone}
+                                                                onChange={handleChange}
+                                                                placeholder="Your Phone" 
+                                                                required 
+                                                            />
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-12 wow fadeInUp" data-wow-delay=".7s">
                                                         <div className="form-clt">
                                                             <span>Write Message*</span>
-                                                            <textarea name="message" id="message" placeholder="Write Message" />
+                                                            <textarea 
+                                                                name="message" 
+                                                                value={formData.message}
+                                                                onChange={handleChange}
+                                                                placeholder="Write Message" 
+                                                                required 
+                                                            />
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-7 wow fadeInUp" data-wow-delay=".9s">

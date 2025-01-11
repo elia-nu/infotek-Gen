@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Menu from "../Menu"
 import OnePageNav from "../OnePageNav"
-
+import useStore from "../../../store/store"
 export default function Header1({
     scroll,
     isOffCanvas,
@@ -10,7 +10,8 @@ export default function Header1({
     handleSearch,
     onePageNav
 }) {
-    return (
+    const { contact  } = useStore()
+       return (
         <>
 
             <header>
@@ -20,25 +21,24 @@ export default function Header1({
                             <ul className="contact-list">
                                 <li>
                                     <i className="far fa-envelope" />
-                                    <Link href="/mailto:info@genshifter.com" className="link">info@genshifter.com</Link>
+                                    <Link href="/mailto:info@genshifter.com" className="link">{`${contact[0]?.email}`}</Link>
                                 </li>
                                 <li>
                                     <i className="fa-solid fa-phone-volume" />
-                                    <Link href="/tel:2086660112">+251-91-081-3571</Link>
+                                    <Link href="/tel:2086660112">{`${contact[0]?.phone1}`}</Link>
                                 </li>
                                 <li>
                                     <i className="fa-solid fa-phone-volume" />
-                                    <Link href="/tel:+251910813571">+1 206 353 5373</Link>
+                                    <Link href="/tel:+251910813571">{`${contact[0]?.phone2}`}</Link>
                                 </li>
                             </ul>
                             <div className="top-right">
                                 <div className="social-icon d-flex align-items-center">
                                     <span>Follow Us:</span>
-                                    <Link href=" https://web.facebook.com/people/GenShifter-Technologies/61567964215142/?mibextid=ZbWKwL" target="_blank"><i className="fab fa-facebook-f" /></Link>
-                                    <Link href=" https://x.com/i/flow/login?redirect_after_login=%2Fgenshifter8" target="_blank"><i className="fab fa-twitter" /></Link>
-                                    <Link href=" https://t.me/GenShifter" target="_blank"><i className="fab fa-telegram" /></Link>
-                                    <Link href=" https://www.linkedin.com/company/genshifter-technologies/?viewAsMember=true" target="_blank"><i className="fab fa-linkedin-in" /></Link>
-                               
+                                    <Link href={`${contact[0]?.facebook}`} target="_blank"><i className="fab fa-facebook-f" /></Link>
+                                    <Link href={`${contact[0]?.twitter}`} target="_blank"><i className="fab fa-twitter" /></Link>
+                                    <Link href={`${contact[0]?.telegram}`} target="_blank"><i className="fab fa-telegram" /></Link>
+                                    <Link href={`${contact[0]?.linkedin}`} target="_blank"><i className="fab fa-linkedin-in" /></Link>
                                 </div>
                             </div>
                         </div>
@@ -50,8 +50,8 @@ export default function Header1({
                             <div className="header-main style-2">
                                 <div className="header-left">
                                     <div className="logo">
-                                        <Link href="/" className="header-logo bg-red-900 px-10" style={{ width: '100px' }}>
-                                            <img src="/assets/img/header/logo.png" style={{ width: '200px' }} alt="logo-img" />
+                                        <Link href="/" className="header-logo bg-red-900 px-10" style={{ width: '00px' }}>
+                                            <img src="/assets/img/header/logo.png" style={{ width: '150px', marginLeft:'20px', marginTop:'-16px', marginBottom:'-30px' }} alt="logo-img" />
                                         </Link>
                                     </div>
                                 </div>

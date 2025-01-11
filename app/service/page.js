@@ -4,9 +4,12 @@ import Accordion1 from "@/components/elements/Accordion1";
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import useStore from "../../store/store";
 
 export default function Service() {
    
+    const { service } = useStore();
+    console.log(service, 'service')
     const data = {
         "company": {
           "name": "GenShifter Technologies",
@@ -21,11 +24,7 @@ export default function Service() {
                 {
                   "name": "Custom Software Development",
                    "description": "We provide tailor-made software solutions designed to fit your specific operational requirements and seamlessly integrate with your existing systems.",
-                  "key_features": [
-                    "Tailored Solutions: Customized software to address your unique business processes.",
-                    "Seamless Integration: Smooth integration with your current systems to maintain operational efficiency.",
-                    "Scalable and Adaptable: Solutions that grow with your business and adjust to future needs."
-                  ]
+                  "key_features": ["Tailored Solutions: Customized software to address your unique business processes.","Seamless Integration: Smooth integration with your current systems to maintain operational efficiency.","Scalable and Adaptable: Solutions that grow with your business and adjust to future needs."]
                 },
                 {
                   "name": "Mobile App Development",
@@ -279,22 +278,22 @@ export default function Service() {
                             </div>
                             <div className="service-wrapper mb-0">
                                 <div className="row">
-                                {services && services.map((service, index) => (
+                                {service && service.map((service, index) => (
                                     <div key={index} className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                                         <div className="service-box-items box-shadow">
-                                            <div className="icon">
-                                                <img src="/assets/img/service/icon/s-icon-1.svg" alt="icon-img" />
+                                        <div className="icon">
+                                                <img src={`/assets/img/service/icon/s-icon-${Math.floor(Math.random() * 4) + 1}.svg`} alt="icon-img" />
                                             </div>
                                             <div className="content">
                                                 <h4>
-                                                    <Link href={`/service-details?title=${encodeURIComponent(service.title)}`}>
+                                                    <Link href={`/service-details?title=${encodeURIComponent(service._id)}`}>
                                                         {service.title}
                                                     </Link>
                                                 </h4>
                                                 <p>
                                                     {service.description.length > 40 ? `${service.description.substring(0, 65)}...` : service.description}
                                                 </p>
-                                                <Link href={`/service-details?title=${encodeURIComponent(service.title)}`} className="theme-btn-2 mt-3">
+                                                <Link href={`/service-details?title=${encodeURIComponent(service._id)}`} className="theme-btn-2 mt-3">
                                                     read More
                                                     <i className="fa-solid fa-arrow-right-long" />
                                                 </Link>

@@ -1,8 +1,10 @@
-
+'use client'
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+import useStore from '../../store/store'
 export default function Team() {
-
+    const { team } = useStore()
+    console.log(team)
     const teamMembers = [
 
         { name: "Mekdelawit Mamushet", position: "Senior Backend Engineer  .", img: "/assets/img/team/905.jpg" },
@@ -20,11 +22,11 @@ export default function Team() {
                     <div className="container">
                         <div className="row g-4 ">
                         
-                        {teamMembers.map((member, index) => (
+                        {team.map((member, index) => (
                             <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay={`${0.2 * (index + 3)}s`} key={index}>
                                 <div className="single-team-items">
                                     <div className="team-image" style={{height:'400px'}}>
-                                        <img src={member.img} alt="team-img" />
+                                        <img src={`${process.env.NEXT_PUBLIC_API_URL}/${member.image}`} alt="team-img" />
                                         <div className="social-profile">
                                             <ul>
                                             <li><Link href="https://www.facebook.com"><i className="fab fa-facebook-f" /> </Link></li>
@@ -38,7 +40,7 @@ export default function Team() {
                                         <h3 style={{color:'white'}}>
                                             {member.name}
                                         </h3>
-                                        <p>{member.position}</p>
+                                        <p>{member.jobTitle}</p>
                                     </div>
                                 </div>
                             </div>

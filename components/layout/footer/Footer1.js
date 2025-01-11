@@ -3,11 +3,11 @@
 
 import Link from "next/link"
 import { useState, useEffect } from 'react';
-
+import useStore from "../../../store/store"
 export default function Footer1() {
     const [isOpen, setIsOpen] = useState(false);
 
-    
+    const { contact ,info ,service } = useStore()
     const services = [
         "Software Development",
         "Managed Services",
@@ -34,18 +34,18 @@ export default function Footer1() {
                                 <div className="single-footer-widget">
                                     <div className="widget-head">
                                         <Link href="/">
-                                            <img src="/assets/img/header/logo.png" style={{ width: '300px' }} alt="logo-img" />
+                                            <img src="/assets/img/header/logo.png" style={{ width: '150px', marginLeft:'20px', marginTop:'-16px', marginBottom:'-30px' }} alt="logo-img" />
                                         </Link>
                                     </div>
                                     <div className="footer-content">
                                         <p>
-                                        GenShifter Technologies is a technology firm providing advanced, customized solutions for businesses. Specializing in software development, system integration, and IT consulting, GenShifter uses the latest technology to optimize operations and drive growth.
+                                        {info[0]?.howWeWork}
                                         </p>
                                         <div className="social-icon d-flex align-items-center">
-                                        <Link href=" https://web.facebook.com/people/GenShifter-Technologies/61567964215142/?mibextid=ZbWKwL" target="_blank"><i className="fab fa-facebook-f" /></Link>
-                                    <Link href=" https://x.com/i/flow/login?redirect_after_login=%2Fgenshifter8" target="_blank"><i className="fab fa-twitter" /></Link>
-                                    <Link href=" https://t.me/GenShifter" target="_blank"><i className="fab fa-telegram" /></Link>
-                                    <Link href=" https://www.linkedin.com/company/genshifter-technologies/?viewAsMember=true" target="_blank"><i className="fab fa-linkedin-in" /></Link>
+                                        <Link href={`${contact[0]?.facebook}`} target="_blank"><i className="fab fa-facebook-f" /></Link>
+                                    <Link href={`${contact[0]?.twitter}`} target="_blank"><i className="fab fa-twitter" /></Link>
+                                    <Link href={`${contact[0]?.telegram}`} target="_blank"><i className="fab fa-telegram" /></Link>
+                                    <Link href={`${contact[0]?.linkedin}`} target="_blank"><i className="fab fa-linkedin-in" /></Link>
                                  </div>
                                     </div>
                                 </div>
@@ -96,12 +96,13 @@ export default function Footer1() {
                                                             <h3>Our Services</h3>
                                                         </div>
                                                         <ul className="list-area">
-                                                            {services.map((service, index) => (
+                                                            {service.map((service, index) => (
                                                                 <li key={index}>
-                                                                    <Link href={`/service-details?title=${encodeURIComponent(service)}`}>
+                                                                    <Link href={`/service-details?title=${encodeURIComponent(service._id)}`}>
                                                                     
-                                                                        {service}
+
                                                                         <i className="fa-solid fa-chevron-right" />
+                                                                        {service.title}
                                                                     </Link>
                                                                 </li>
                                                             ))}
@@ -119,25 +120,25 @@ export default function Footer1() {
                                         <ul className="contact-info">
                                             <li>
                                                 <i className="fas fa-map-marker-alt" />
-                                                Bole Dembel, Tigi's Building, 12th Floor
+                                                {contact[0]?.address}
                                             </li>
                                             <li>
                                                 <i className="fa-regular fa-envelope" />
-                                                <Link href="/mailto:infotech@gmail.com">info@genshifter.com
+                                                <Link href={`mailto:${contact[0]?.email}`}>{contact[0]?.email}
                                                 </Link>
                                                
                                             </li>
                                             <li>
                                                 <i className="fa-solid fa-phone-volume" />
-                                                <Link href="/tel:+251910813571">+251 91 081 3571</Link>
+                                                <Link href={`tel:${contact[0]?.phone1}`}>{contact[0]?.phone1}</Link>
                                             </li>
                                             <li>
                                                 <i className="fa-solid fa-phone-volume" />
-                                                <Link href="/tel:+251910813571">+251 94 143 9741</Link>
+                                                <Link href={`tel:${contact[0]?.phone2}`}>{contact[0]?.phone2}</Link>
                                             </li>
                                             <li>
                                                 <i className="fa-solid fa-phone-volume" />
-                                                <Link href="/tel:+251910813571">+1 206 353 5373</Link>
+                                                <Link href={`tel:${contact[0]?.phone3}`}>{contact[0]?.phone3}</Link>
                                             </li>
                                       
                                         </ul>

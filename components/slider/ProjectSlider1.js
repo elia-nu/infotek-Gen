@@ -2,7 +2,7 @@
 import Link from "next/link"
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
-
+import useStore from "../../store/store"
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
     spaceBetween: 30,
@@ -223,24 +223,25 @@ const projectDetailsArray = {
     },
 };
 export default function ProjectSlider1({ showDots }) {
+    const { project } = useStore()
     return (
         <>
             <div className="swiper project-slider pt-5">
                 <Swiper {...swiperOptions} className="swiper-wrapper">
 
-                {Object.entries(projectDetailsArray).map(([key, project]) => (
-                        <SwiperSlide key={key}>
+                {project.map((project, index) => (
+                        <SwiperSlide key={index}>
                             <div className="project-items">
                                 <div className="project-image">
-                                    <img src={project.image} alt={project.projectName} />
+                                    <img src={`${process.env.NEXT_PUBLIC_API_URL}/${project.image}`} alt={project.title} />
                                     <div className="project-content">
                                         <p>Technology</p>
                                         <h4>
-                                            <Link href={`/project-details?title=${encodeURIComponent(key)}`}>
-                                                {project.projectName}
+                                            <Link href={`/project-details?id=${encodeURIComponent(project._id)}`}>
+                                                {project.title}
                                             </Link>
                                         </h4>
-                                        <Link href={`/project-details?title=${encodeURIComponent(key)}`} className="icon">
+                                        <Link href={`/project-details?id=${encodeURIComponent(project._id)}`} className="icon">
                                             <i className="fa-solid fa-arrow-right" />
                                         </Link>
                                     </div>
