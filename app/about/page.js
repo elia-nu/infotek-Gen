@@ -6,13 +6,74 @@ import BrandSlider1 from "@/components/slider/BrandSlider1";
 import ProjectSlider2 from "@/components/slider/ProjectSlider2";
 import Link from "next/link";
 import useStore from "../../store/store";
+import { useEffect } from "react";
 export default function About() {
   const { about, why_choose_us, who_we_are, our_goal } = useStore();
+  const { setAbout, setWhyChooseUs, setWhoWeAre, setOurGoal } = useStore();
   console.log(why_choose_us, "dad");
+
   console.log(
     `${process.env.NEXT_PUBLIC_API_URL}/${about[0]?.aboutImg2}`,
     "dad"
   );
+  useEffect(() => {
+    const fetchCareer = async () => {
+        try {
+            const response = await fetch(`https://admin.z.genshifter.com/api/about`);
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            const data = await response.json();
+            setAbout(data);
+        } catch (error) {
+            console.error('Error fetching career data:', error);
+        }
+    };
+    const fetchWhyChooseUs = async () => {
+      try {
+          const response = await fetch(`https://admin.z.genshifter.com/api/why-choose-us`);
+          if (!response.ok) {
+              throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          const data = await response.json();
+            setWhyChooseUs(data);
+      } catch (error) {
+          console.error('Error fetching career data:', error);
+      }
+  };
+
+  const fetchWhoWeAre = async () => {
+    try {
+        const response = await fetch(`https://admin.z.genshifter.com/api/who-we-are`);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+          setWhoWeAre(data);
+    } catch (error) {
+        console.error('Error fetching career data:', error);
+    }
+};
+
+const fetchOurGoal = async () => {
+  try {
+      const response = await fetch(`https://admin.z.genshifter.com/api/our-goal`);
+      if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const data = await response.json();
+      setOurGoal(data);
+  } catch (error) {
+      console.error('Error fetching career data:', error);
+  }
+};
+
+      fetchOurGoal();
+      fetchWhyChooseUs();
+      fetchWhoWeAre();
+      fetchAbout();
+}, [setOurGoal, setWhyChooseUs, setWhoWeAre, setAbout]);
+
   const data = [
     {
       id: 1,

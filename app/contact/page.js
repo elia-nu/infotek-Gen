@@ -18,7 +18,7 @@ export default function Contact() {
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/contact-us`, {
+            const response = await fetch(`https://admin.z.genshifter.com/api/contact-us`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
