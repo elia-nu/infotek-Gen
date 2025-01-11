@@ -1,3 +1,5 @@
+'use client'
+
 import Layout from "@/components/layout/Layout"
 import About3 from "@/components/sections/About3"
 import Achievement1 from "@/components/sections/Achievement1"
@@ -14,6 +16,7 @@ import Service1 from "@/components/sections/Service1"
 import Team3 from "@/components/sections/Team3"
 import Testimonial1 from "@/components/sections/Testimonial1"
 import useStore from "../store/store"
+import { useEffect } from "react"
 
 export default function Home() {
  
