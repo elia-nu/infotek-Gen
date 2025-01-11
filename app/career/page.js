@@ -20,20 +20,14 @@ export default function Career() {
     });
 
     useEffect(() => {
-        const apiUrl = process.env.NEXT_PUBLIC_API_URL
-        
-        if (!apiUrl) {
-            console.error('API URL not configured')
-            return
-        }
-        console.log(apiUrl,'apiUrl')
         const fetchCareer = async () => {
             try {
-                const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/career`);
-                if (response.ok) {
-                    const data = await response.json();
-                    setCareer(data);
+                const response = await fetch('/api/career');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
                 }
+                const data = await response.json();
+                setCareer(data);
             } catch (error) {
                 console.error('Error fetching career data:', error);
             }
