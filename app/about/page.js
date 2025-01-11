@@ -13,7 +13,7 @@ export default function About() {
   console.log(why_choose_us, "dad");
 
   console.log(
-    `${process.env.NEXT_PUBLIC_API_URL}/${about[0]?.aboutImg2}`,
+    `https://admin.z.genshifter.com/${about[0]?.aboutImg2}`,
     "dad"
   );
   useEffect(() => {
@@ -211,7 +211,7 @@ const fetchOurGoal = async () => {
                           data-wow-delay=".5s"
                         >
                           <img
-                            src={`${process.env.NEXT_PUBLIC_API_URL}/${about[0]?.aboutImg2}`}
+                            src={`https://admin.z.genshifter.com/${about[0]?.aboutImg2}`}
                             alt="about-img"
                           />
                         </div>
@@ -262,7 +262,7 @@ const fetchOurGoal = async () => {
                               }}
                             >
                               <img
-                                src={`${process.env.NEXT_PUBLIC_API_URL}/${item.icon}`}
+                                src={`https://admin.z.genshifter.com/${item.icon}`}
                                 alt="icon-img"
                                 className="mx-auto"
                               />
@@ -325,7 +325,7 @@ const fetchOurGoal = async () => {
                       </div>
                       <div className="d-flex flex-column align-items-start justify-content-start">
                         <img
-                          src={`${process.env.NEXT_PUBLIC_API_URL}/${item.icon}`}
+                          src={`https://admin.z.genshifter.com/${item.icon}`}
                           alt="Icon"
                           style={{
                             height: "4rem",
@@ -343,7 +343,7 @@ const fetchOurGoal = async () => {
                   data-wow-delay=".5s"
                 >
                   <img
-                    src={`${process.env.NEXT_PUBLIC_API_URL}/${why_choose_us[0]?.img}`}
+                    src={`https://admin.z.genshifter.com/${why_choose_us[0]?.img}`}
                     alt="Why Choose Us"
                     style={{
                       height: "400px",
@@ -362,7 +362,7 @@ const fetchOurGoal = async () => {
                     >
                       <div className="d-flex flex-column align-items-start justify-content-start">
                         <img
-                          src={`${process.env.NEXT_PUBLIC_API_URL}/${item.icon}`}
+                          src={`https://admin.z.genshifter.com/${item.icon}`}
                           alt="Icon"
                           style={{
                             height: "4rem",
@@ -416,7 +416,7 @@ const fetchOurGoal = async () => {
                   >
                     <div className="col-8 h-100 pe-2">
                       <img
-                        src={`${process.env.NEXT_PUBLIC_API_URL}/${who_we_are[0]?.img[0]}`}
+                        src={`https://admin.z.genshifter.com/${who_we_are[0]?.img[0]}`}
                         alt="GenShifter team"
                         className="img-fluid h-100 w-100 rounded shadow"
                         style={{ objectFit: "cover" }}
@@ -424,13 +424,13 @@ const fetchOurGoal = async () => {
                     </div>
                     <div className="col-4 h-100 d-flex flex-column">
                       <img
-                        src={`${process.env.NEXT_PUBLIC_API_URL}/${who_we_are[0]?.img[1]}`}
+                        src={`https://admin.z.genshifter.com/${who_we_are[0]?.img[1]}`}
                         alt="Office space"
                         className="img-fluid mb-2 rounded shadow"
                         style={{ objectFit: "cover", height: "50%" }}
                       />
                       <img
-                        src={`${process.env.NEXT_PUBLIC_API_URL}/${who_we_are[0]?.img[2]}`}
+                        src={`https://admin.z.genshifter.com/${who_we_are[0]?.img[2]}`}
                         alt="Project meeting"
                         className="img-fluid rounded shadow"
                         style={{ objectFit: "cover", height: "50%" }}
