@@ -73,7 +73,23 @@ export default function Home() {
   
     }, [setTeam, setTestimonials, setPartner, setAchievements, setAbout, setInfo, setContact, setWhyChooseUs, setCareer, setProject, setFaq, setService, setWhoWeAre, setOurGoal])
   
-  
+    useEffect(() => {
+        const fetchProject = async () => {
+            try {
+                const response = await fetch(`https://admin.z.genshifter.com/api/project`);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+                setProject(data);
+            } catch (error) {
+                console.error('Error fetching project data:', error);
+            }
+        };
+
+        fetchProject();
+    }, [setProject]);
+    
     return (
         <>
             <Layout headerStyle={1} footerStyle={1}>
