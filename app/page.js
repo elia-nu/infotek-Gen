@@ -13,7 +13,7 @@ import Project1 from "@/components/sections/Project1"
 import Service1 from "@/components/sections/Service1"
 import Team3 from "@/components/sections/Team3"
 import Testimonial1 from "@/components/sections/Testimonial1"
-import useStore from "../../store/store"
+import useStore from "../store/store"
 
 export default function Home() {
  
