@@ -7,6 +7,7 @@ import useStore  from '../../store/store'
 export default function About3() {
     const { about , info, contact } = useStore();
 
+    
     const aboutData = {
         title: "ABOUT GenShifter",
         subtitle: "We empower clients with innovative solutions that address their unique challenges.",

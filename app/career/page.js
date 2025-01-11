@@ -2,12 +2,12 @@
 
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import useStore from "../../store/store";
 import Swal from 'sweetalert2';
 
 export default function Career() {
-    const {career} = useStore();
+    const {career, setCareer} = useStore();
     const [selectedPosition, setSelectedPosition] = useState(null);
     const [formData, setFormData] = useState({
         firstName: "",
@@ -18,6 +18,29 @@ export default function Career() {
         coverLetter: null,
         appliedFor: ""
     });
+
+    useEffect(() => {
+        const apiUrl = process.env.NEXT_PUBLIC_API_URL
+        
+        if (!apiUrl) {
+            console.error('API URL not configured')
+            return
+        }
+        console.log(apiUrl,'apiUrl')
+        const fetchCareer = async () => {
+            try {
+                const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/career`);
+                if (response.ok) {
+                    const data = await response.json();
+                    setCareer(data);
+                }
+            } catch (error) {
+                console.error('Error fetching career data:', error);
+            }
+        };
+
+        fetchCareer();
+    }, [setCareer]);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
