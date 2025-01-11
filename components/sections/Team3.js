@@ -40,7 +40,7 @@ export default function Team3() {
                             <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay={`${0.2 * (index + 3)}s`} key={index}>
                                 <div className="single-team-items">
                                     <div className="team-image" style={{height:'400px'}}>
-                                        <img src={`${process.env.NEXT_PUBLIC_API_URL}/${member.image}`} alt="team-img" />
+                                        <img src={`https://admin.z.genshifter.com/${member.image}`} alt="team-img" />
                                         <div className="social-profile">
                                             <ul>
                                             <li><Link href="https://www.facebook.com"><i className="fab fa-facebook-f" /> </Link></li>

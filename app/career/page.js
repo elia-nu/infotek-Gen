@@ -48,7 +48,7 @@ export default function Career() {
         }
 
         try {
-            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/career-applicant`, {
+            const response = await fetch(`https://admin.z.genshifter.com/api/career-applicant`, {
                 method: 'POST',
                 body: data
             });

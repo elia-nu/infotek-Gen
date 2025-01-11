@@ -94,7 +94,7 @@ export default function ServiceDetails() {
                                     <div className="col-12 col-lg-8 order-1 order-md-2">
                                         <div className="service-details-items">
                                             <div className="details-image">
-                                                <img src={`${process.env.NEXT_PUBLIC_API_URL}/${serviceDetails.img}`} alt={serviceDetails.title} />
+                                                <img src={`https://admin.z.genshifter.com/${serviceDetails.img}`} alt={serviceDetails.title} />
                                             </div>
                                             <div className="details-content">
                                                 <h2>{serviceDetails.title}</h2>

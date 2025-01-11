@@ -233,7 +233,7 @@ export default function ProjectSlider1({ showDots }) {
                         <SwiperSlide key={index}>
                             <div className="project-items">
                                 <div className="project-image">
-                                    <img src={`${process.env.NEXT_PUBLIC_API_URL}/${project.image}`} alt={project.title} />
+                                    <img src={`https://admin.z.genshifter.com/${project.image}`} alt={project.title} />
                                     <div className="project-content">
                                         <p>Technology</p>
                                         <h4>

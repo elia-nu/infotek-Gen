@@ -50,7 +50,7 @@ export default function BrandSlider1() {
                         partner.map((item, index) => (
                             <SwiperSlide key={`${i}-${index}`}>
                                 <div className="brand-image">
-                                    <img src={`${process.env.NEXT_PUBLIC_API_URL}/${item.image}`} alt="brand-img" />
+                                    <img src={`https://admin.z.genshifter.com/${item.image}`} alt="brand-img" />
                                 </div>
                             </SwiperSlide>
                         ))

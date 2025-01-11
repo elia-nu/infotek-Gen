@@ -47,7 +47,7 @@ export default function ProjectDetails() {
                                     <div className="col-lg-12">
                                         <div className="project-details-items">
                                             <div className="details-image">
-                                                <img src={`${process.env.NEXT_PUBLIC_API_URL}/${projectDetails?.image}`} alt={projectDetails?.title} />
+                                                <img src={`https://admin.z.genshifter.com/${projectDetails?.image}`} alt={projectDetails?.title} />
                                             </div>
                                             <div className="row g-4 justify-content-between" >
                                                 <div className="">

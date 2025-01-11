@@ -41,7 +41,7 @@ export default function Layout({ headerStyle, footerStyle, onePageNav, breadcrum
     const { setTeam, setTestimonials, setPartner, setAchievements, setAbout, setInfo, setContact, setWhyChooseUs, setCareer, setProject, setFaq, setService, setWhoWeAre, setOurGoal } = useStore()
 
     useEffect(() => {
-      const apiUrl = process.env.NEXT_PUBLIC_API_URL
+      const apiUrl = 'https://admin.z.genshifter.com'
       
       if (!apiUrl) {
         console.error('API URL not configured')

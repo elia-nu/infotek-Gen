@@ -24,7 +24,7 @@ export default function Project() {
                                 <div key={project.id} className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay={`.${(index % 3 + 3)}s`}>
                                     <div className="project-items">
                                         <div className="project-image">
-                                            <img src={`${process.env.NEXT_PUBLIC_API_URL}/${project.image}`} alt={project.title} />
+                                            <img src={`https://admin.z.genshifter.com/${project.image}`} alt={project.title} />
                                             <div className="project-content">
                                             <h4>
                                             <Link href={`/project-details?id=${encodeURIComponent(project._id)}`}>

@@ -20,7 +20,7 @@ export default function Achievement1() {
                             {achievements?.map((item, index) => (
                                 <div key={item._id} className="counter-items wow fadeInUp" data-wow-delay={`0.${(index + 3)}s`}>
                                     <div className="icon">
-                                        <img src={`${process.env.NEXT_PUBLIC_API_URL}/${item.achievement[0].icons}`} alt="icon-img" />
+                                        <img src={`https://admin.z.genshifter.com/${item.achievement[0].icons}`} alt="icon-img" />
                                     </div>
                                     <div className="content">
                                         <h2><CounterUp count={item.achievement[0].number}/>+</h2>
