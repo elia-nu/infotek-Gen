@@ -19,6 +19,7 @@ export default function Home() {
  
     const { setTeam, setTestimonials, setPartner, setAchievements, setAbout, setInfo, setContact, setWhyChooseUs, setCareer, setProject, setFaq, setService, setWhoWeAre, setOurGoal } = useStore()
 
+    
     useEffect(() => {
       const apiUrl = process.env.NEXT_PUBLIC_API_URL
       
