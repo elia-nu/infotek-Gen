@@ -33,189 +33,47 @@ export default function RootLayout({ children }) {
       return
     }
 
-    // Fetch team data
-    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/team/`)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok')
-        }
-        return response.json()
-      })
-      .then(data => {
-        setTeam(data)
-        console.log('Team data loaded:', data)
-      })
-      .catch(error => console.error('Error fetching team data:', error))
+    const fetchAllData = () => {
+      const endpoints = [
+        { url: '/api/team/', setter: setTeam, name: 'Team' },
+        { url: '/api/testimonial/', setter: setTestimonials, name: 'Testimonials' },
+        { url: '/api/partnership/', setter: setPartner, name: 'Partnership' },
+        { url: '/api/achievement/', setter: setAchievements, name: 'Achievements' },
+        { url: '/api/about/', setter: setAbout, name: 'About' },
+        { url: '/api/info/', setter: setInfo, name: 'Info' },
+        { url: '/api/contact/', setter: setContact, name: 'Contact' },
+        { url: '/api/why-choose-us/', setter: setWhyChooseUs, name: 'Why Choose Us' },
+        { url: '/api/project/', setter: setProject, name: 'Project' },
+        { url: '/api/faq', setter: setFaq, name: 'FAQ' },
+        { url: '/api/service', setter: setService, name: 'Service' },
+        { url: '/api/who-we-are', setter: setWhoWeAre, name: 'Who We Are' },
+        { url: '/api/our-goal', setter: setOurGoal, name: 'Our Goal' }
+      ]
 
-    // Fetch testimonials data  
-    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/testimonial/`)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok')
-        }
-        return response.json()
+      endpoints.forEach(endpoint => {
+        fetch(`${apiUrl}${endpoint.url}`)
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok')
+            }
+            return response.json()
+          })
+          .then(data => {
+            endpoint.setter(data)
+            console.log(`${endpoint.name} data loaded:`, data)
+          })
+          .catch(error => console.error(`Error fetching ${endpoint.name}:`, error))
       })
-      .then(data => {
-        setTestimonials(data)
-        console.log('Testimonials data loaded:', data)
-      })
-      .catch(error => console.error('Error fetching testimonials:', error))
+    }
 
-    // Fetch partnership data
-    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/partnership/`)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok')
-        }
-        return response.json()
-      })
-      .then(data => {
-        setPartner(data)
-        console.log('Partnership data loaded:', data)
-      })
-      .catch(error => console.error('Error fetching partnership:', error))
+    // Initial fetch
+    fetchAllData()
 
-    // Fetch achievements data
-    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/achievement/`)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok')
-        }
-        return response.json()
-      })
-      .then(data => {
-        setAchievements(data)
-        console.log('Achievements data loaded:', data)
-      })
-      .catch(error => console.error('Error fetching achievements:', error))
+    // Set up interval to fetch every 30 seconds
+    const interval = setInterval(fetchAllData, 30000)
 
-    // Fetch about data
-    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/about/`)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok')
-        }
-        return response.json()
-      })
-      .then(data => {
-        setAbout(data)
-        console.log('About data loaded:', data)
-      })
-      .catch(error => console.error('Error fetching about:', error))
-
-    // Fetch info data
-    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/info/`)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok')
-        }
-        return response.json()
-      })
-      .then(data => {
-        setInfo(data)
-        console.log('Info data loaded:', data)
-      })
-      .catch(error => console.error('Error fetching info:', error))
-
-    // Fetch contact data
-    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/contact/`)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok')
-        }
-        return response.json()
-      })
-      .then(data => {
-        setContact(data)
-        console.log('Contact data loaded:', data)
-      })
-      .catch(error => console.error('Error fetching contact:', error))
-
-    // Fetch why choose us data
-    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/why-choose-us/`)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok')
-        }
-        return response.json()
-      })
-      .then(data => {
-        setWhyChooseUs(data)
-        console.log('Why Choose Us data loaded:', data)
-      })
-      .catch(error => console.error('Error fetching why choose us:', error))
-
-    // Fetch career data
-
-    // Fetch project data
-    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/project/`)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok')
-        }
-        return response.json()
-      })
-      .then(data => {
-        setProject(data)
-        console.log('Project data loaded:', data)
-      })
-      .catch(error => console.error('Error fetching project:', error))
-
-    // Fetch FAQ data
-    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/faq`)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok')
-        }
-        return response.json()
-      })
-      .then(data => {
-        setFaq(data)
-        console.log('FAQ data loaded:', data)
-      })
-      .catch(error => console.error('Error fetching FAQ:', error))
-
-    // Fetch service data
-    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/service`)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok')
-        }
-        return response.json()
-      })
-      .then(data => {
-        setService(data)
-        console.log('Service data loaded:', data)
-      })
-      .catch(error => console.error('Error fetching service:', error))
-
-    // Fetch who we are data
-    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/who-we-are`)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok')
-        }
-        return response.json()
-      })
-      .then(data => {
-        setWhoWeAre(data)
-        console.log('Who We Are data loaded:', data)
-      })
-      .catch(error => console.error('Error fetching who we are:', error))
-
-    // Fetch our goal data
-    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/our-goal`)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok')
-        }
-        return response.json()
-      })
-      .then(data => {
-        setOurGoal(data)
-        console.log('Our Goal data loaded:', data)
-      })
-      .catch(error => console.error('Error fetching our goal:', error))
+    // Cleanup interval on component unmount
+    return () => clearInterval(interval)
 
   }, [setTeam, setTestimonials, setPartner, setAchievements, setAbout, setInfo, setContact, setWhyChooseUs, setCareer, setProject, setFaq, setService, setWhoWeAre, setOurGoal])
 

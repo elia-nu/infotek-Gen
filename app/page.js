@@ -22,7 +22,7 @@ export default function Home() {
     const { setTeam, setTestimonials, setPartner, setAchievements, setAbout, setInfo, setContact, setWhyChooseUs, setCareer, setProject, setFaq, setService, setWhoWeAre, setOurGoal } = useStore()
 
     useEffect(() => {
-        const apiUrl = process.env.NEXT_PUBLIC_API_URL
+        const apiUrl = 'https://admin.z.genshifter.com'
         
         if (!apiUrl) {
             console.error('API URL not configured')
@@ -45,20 +45,18 @@ export default function Home() {
             { path: '/api/who-we-are', setter: setWhoWeAre, name: 'Who We Are' },
             { path: '/api/our-goal', setter: setOurGoal, name: 'Our Goal' }
         ]
-
         const fetchData = async (endpoint) => {
             try {
-                const response = await fetch(`${apiUrl}${endpoint.path}`)
+                const response = await fetch(`${apiUrl}${endpoint.path}`);
                 if (!response.ok) {
-                    throw new Error('Network response was not ok')
+                    throw new Error(`HTTP error! status: ${response.status}`);
                 }
-                const data = await response.json()
-                endpoint.setter(data)
-                console.log(`${endpoint.name} data loaded:`, data)
+                const data = await response.json();
+                endpoint.setter(data);
             } catch (error) {
-                console.error(`Error fetching ${endpoint.name.toLowerCase()}:`, error)
+                console.error(`Error fetching ${endpoint.name.toLowerCase()} data:`, error);
             }
-        }
+        };
 
         // Fetch all data concurrently
         Promise.all(endpoints.map(fetchData))
