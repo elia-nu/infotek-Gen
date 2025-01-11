@@ -9,6 +9,7 @@ import Swal from 'sweetalert2';
 export default function Career() {
     const {career, setCareer} = useStore();
     const [selectedPosition, setSelectedPosition] = useState(null);
+    const [careerId, setCareerId] = useState(null);
     const [formData, setFormData] = useState({
         firstName: "",
         lastName: "", 
@@ -40,7 +41,8 @@ export default function Career() {
         e.preventDefault();
         
         const data = new FormData();
-        data.append('appliedFor', selectedPosition._id);
+        data.append('appliedFor', careerId);
+        console.log(careerId,"careerId");
         for (const key in formData) {
             if (key !== 'appliedFor') {
                 data.append(key, formData[key]);
@@ -140,7 +142,12 @@ export default function Career() {
                                                 </div>
                                                 <button 
                                                     className="theme-btn mt-4 w-100"
-                                                    onClick={() => setSelectedPosition(position)}
+                                                    onClick={() => {
+                                                        setCareerId(careerItem._id);
+                                                        console.log(careerItem ,'wdw' ,careerId);
+                                                      
+                                                        setSelectedPosition(position);
+                                                    }}
                                                     style={{backgroundColor: "#ea8c06", border: "none"}}
                                                 >
                                                     View Details & Apply
