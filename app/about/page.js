@@ -306,7 +306,7 @@ const fetchOurGoal = async () => {
               </div>
               <div className="row">
                 <div className="col-lg-4 d-flex flex-column gap-5">
-                  {why_choose_us[0]?.exp.slice(0, 3).map((item) => (
+                  {data.slice(0, 3).map((item) => (
                     <div
                       key={item._id}
                       className="d-flex flex-row gap-2 wow fadeInUp"
@@ -323,8 +323,8 @@ const fetchOurGoal = async () => {
                           {item.description}
                         </p>
                       </div>
-                      <div className="d-flex flex-column align-items-start justify-content-start">
-                        <img
+                    <div className="d-flex flex-column align-items-start justify-content-start">
+                     {/*   <img
                           src={`https://admin.z.genshifter.com/${item.icon}`}
                           alt="Icon"
                           style={{
@@ -333,7 +333,17 @@ const fetchOurGoal = async () => {
                             filter: "hue-rotate(30deg) saturate(100%)",
                           }}
                         />
-                      </div>
+                      */} 
+                       <img
+                          src={item.icon}
+                          alt="Icon"
+                          style={{
+                            height: "4rem",
+                            width: "20rem",
+                            filter: "hue-rotate(30deg) saturate(100%)",
+                          }}
+                        /> 
+                        </div>
                     </div>
                   ))}
                 </div>
@@ -354,14 +364,14 @@ const fetchOurGoal = async () => {
                 </div>
 
                 <div className="col-lg-4 d-flex flex-column gap-5">
-                  {why_choose_us[0]?.exp.slice(3, 6).map((item) => (
+                  {data.slice(3, 6).map((item) => (
                     <div
                       key={item._id}
                       className="d-flex flex-row gap-2 wow fadeInUp"
                       data-wow-delay=".5s"
                     >
                       <div className="d-flex flex-column align-items-start justify-content-start">
-                        <img
+                          {/*   <img
                           src={`https://admin.z.genshifter.com/${item.icon}`}
                           alt="Icon"
                           style={{
@@ -370,6 +380,16 @@ const fetchOurGoal = async () => {
                             filter: "hue-rotate(30deg) saturate(100%)",
                           }}
                         />
+                      */} 
+                       <img
+                          src={item.icon}
+                          alt="Icon"
+                          style={{
+                            height: "4rem",
+                            width: "20rem",
+                            filter: "hue-rotate(30deg) saturate(100%)",
+                          }}
+                        /> 
                       </div>
                       <div>
                         <h2

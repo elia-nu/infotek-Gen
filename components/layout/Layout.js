@@ -84,12 +84,7 @@ export default function Layout({ headerStyle, footerStyle, onePageNav, breadcrum
       // Initial fetch
       fetchAllData()
   
-      // Set up interval to fetch every 30 seconds
-      const interval = setInterval(fetchAllData, 30000)
-  
-      // Cleanup interval on component unmount
-      return () => clearInterval(interval)
-  
+      
     }, [setTeam, setTestimonials, setPartner, setAchievements, setAbout, setInfo, setContact, setWhyChooseUs, setCareer, setProject, setFaq, setService, setWhoWeAre, setOurGoal])
   
   
