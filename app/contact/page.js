@@ -198,8 +198,9 @@ export default function Contact() {
                     <div className="map-section">
                         <div className="map-items">
                             <div className="googpemap">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d246.29423475954!2d38.78539731682819!3d8.999015858131017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x164b85f45a1cc8a1%3A0xe1a4370ae2994eeb!2sXQXP%2BJ6C%2C%20Namibia%20St%2C%20Addis%20Ababa!3m2!1d8.9990534!2d38.7855079!5e0!3m2!1sen!2set!4v1726422019070!5m2!1sen!2set"style={{ border: 0 }} allowFullScreen loading="lazy" />
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4895.014511527463!2d38.76563057589901!3d9.005178091055207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85fd6d2d8d7f%3A0xfee7af84ac652672!2sTigi%20Building!5e1!3m2!1sen!2set!4v1736870652797!5m2!1sen!2set" style={{ border: 0 }} allowFullScreen loading="lazy" />
                             </div>
+                            
                         </div>
                     </div>
                 </div>

@@ -34,7 +34,7 @@ export default function Footer1() {
                                 <div className="single-footer-widget">
                                     <div className="widget-head">
                                         <Link href="/">
-                                            <img src="/assets/img/header/logo.png" style={{ width: '150px'}} alt="logo-img" />
+                                            <img src="/assets/img/header/logo_f.png" style={{ width: '150px'}} alt="logo-img" />
                                         </Link>
                                     </div>
                                     <div className="footer-content">
