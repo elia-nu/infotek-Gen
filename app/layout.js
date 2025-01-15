@@ -20,17 +20,7 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon.ico',
-    apple: '/favicon.ico'
   },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1
-  },
-  robots: {
-    index: true,
-    follow: true
-  }
 };
 
 export default function RootLayout({ children }) {
@@ -39,4 +29,5 @@ export default function RootLayout({ children }) {
       <body className={`${kumbh.className}`}>{children}</body>
     </html>
   )
+  
 }
