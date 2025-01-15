@@ -7,34 +7,34 @@ export default function Preloader() {
                     <div className="spinner">
                     </div>
                     <div className="txt-loading">
-                        <span data-text-preloader="G" className="letters-loading">
+                        <span data-text-preloader="G" className="md:letters-loading">
                             G
                         </span>
-                        <span data-text-preloader="E" className="letters-loading">
+                        <span data-text-preloader="E" className="md:letters-loading">
                             E
                         </span>
-                        <span data-text-preloader="N" className="letters-loading">
+                        <span data-text-preloader="N" className="md:letters-loading">
                             N
                         </span>
-                        <span data-text-preloader="S" className="letters-loading">
+                        <span data-text-preloader="S" className="md:letters-loading">
                             S
                         </span>
-                        <span data-text-preloader="H" className="letters-loading">
+                        <span data-text-preloader="H" className="md:letters-loading">
                             H
                         </span>
-                        <span data-text-preloader="I" className="letters-loading">
+                        <span data-text-preloader="I" className="md:letters-loading">
                             I
                         </span>
-                        <span data-text-preloader="F" className="letters-loading">
+                        <span data-text-preloader="F" className="md:letters-loading">
                             F
                         </span>
-                        <span data-text-preloader="T" className="letters-loading">
+                        <span data-text-preloader="T" className="md:letters-loading">
                             T
                         </span>
-                        <span data-text-preloader="E" className="letters-loading">
+                        <span data-text-preloader="E" className="md:letters-loading">
                             E
                         </span>
-                        <span data-text-preloader="R" className="letters-loading">
+                        <span data-text-preloader="R" className="md:letters-loading">
                             R
                         </span>
                     </div>
