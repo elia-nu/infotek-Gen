@@ -226,7 +226,7 @@ export default function ProjectSlider1({ showDots }) {
     const { project } = useStore()
     return (
         <>
-            <div className="swiper project-slider pt-5">
+            <div className="swiper project-slider ">
                 <Swiper {...swiperOptions} className="swiper-wrapper">
 
                 {project.map((project, index) => (

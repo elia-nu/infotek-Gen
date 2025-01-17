@@ -36,8 +36,17 @@ export default function Testimonial1() {
     console.log(testimonials)
     return (
         <>
-            <section className="testimonial-section section-padding fix">
+            <section className="testimonial-section  bg-red-200 section-padding -pt-40 fix" style={{paddingTop: '-400px'}}>
                 <div className="container">
+                <div className="container">
+                        <div className="section-title text-center pb-20" style={{paddingBottom: '50px'}}>
+                            <span className="wow fadeInUp pb-20 text-center">Our Testimonials</span>
+                            <h2 className="wow fadeInUp" data-wow-delay=".3s">
+                                What Our Clients Say About Us
+                            </h2>
+                        </div>
+                   
+                </div>
                     <div className="testimonial-wrapper">
                         <div className="swiper testimonial-slider">
                             <Swiper {...swiperOptions} className="swiper-wrapper">
