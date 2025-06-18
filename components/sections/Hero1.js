@@ -39,7 +39,8 @@ const Hero1 = memo(function Hero1() {
       className="hero-section fix hero-1 bg-cover"
       style={{
         backgroundImage: `url("${heroData.images.background}")`,
-        height: "80vh",
+        height: "900px ",
+        maxHeight: "900px",
       }}
     >
       <div className="text-transparent">
