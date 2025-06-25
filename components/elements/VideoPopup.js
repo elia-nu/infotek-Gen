@@ -11,6 +11,8 @@ export default function VideoPopup({ style }) {
     setMounted(true);
   }, []);
 
+  const videoId = "SAQ241JdsGU";
+
   const modal = isOpen && (
     <div
       className="video-popup-container"
@@ -55,7 +57,7 @@ export default function VideoPopup({ style }) {
           ×
         </button>
         <iframe
-          src="https://www.youtube.com/embed/vfhzo499OeA?autoplay=1"
+          src="https://www.youtube.com/embed/?autoplay=1"
           title="YouTube video player"
           frameBorder="0"
           style={{
