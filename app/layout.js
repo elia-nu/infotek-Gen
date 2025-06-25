@@ -8,6 +8,7 @@ import "/public/assets/css/nice-select.css";
 import "/public/assets/css/main.css";
 import { Kumbh_Sans } from "next/font/google";
 import Script from "next/script";
+import ClientAnalytics from "@/components/ClientAnalytics";
 
 const kumbh = Kumbh_Sans({
   weight: ["300", "400", "500", "600", "700", "800", "900"],
@@ -42,7 +43,10 @@ export default function RootLayout({ children }) {
           `}
         </Script>
       </head>
-      <body className={`${kumbh.className}`}>{children}</body>
+      <body className={`${kumbh.className}`}>
+        {children}
+        <ClientAnalytics />
+      </body>
     </html>
   );
 }
