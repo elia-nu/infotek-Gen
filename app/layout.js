@@ -1,3 +1,4 @@
+//import "./globals.css"; // Import Tailwind CSS
 import "/public/assets/css/bootstrap.min.css";
 import "/public/assets/css/all.min.css";
 import "/public/assets/css/animate.css";

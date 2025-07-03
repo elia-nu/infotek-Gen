@@ -1,0 +1,12 @@
+.team-s {
+  width: 280px;
+  height: 350px;
+}
+
+@media (max-width: 1307px) {
+  .team-s {
+    flex: 0 1 calc(25% - 15px);
+    max-width: calc(25% - 15px);
+    height: 350px;
+  }
+}

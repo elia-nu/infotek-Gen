@@ -1,6 +1,9 @@
 "use client";
 import Link from "next/link";
 import useStore from "../../store/store";
+import "./Team.css";
+import "../../app/globals.css"; // Import Tailwind CSS
+
 export default function Team3() {
   const { team } = useStore();
   const teamMembers = [
@@ -74,16 +77,19 @@ export default function Team3() {
           >
             {team.slice(0, 4).map((member, index) => (
               <div
-                className="wow fadeInUp"
+                className="wow fadeInUp team-s"
                 data-wow-delay={`${0.2 * (index + 3)}s`}
                 key={index}
-                style={{ flex: "0 1 350px" }}
+                style={{
+                  flex: "0 1 280px",
+                  maxWidth: "280px",
+                }}
               >
                 <div className="single-team-items">
                   <div
                     className="team-image"
                     style={{
-                      height: "400px",
+                      height: "350px",
                       width: "100%",
                       position: "relative",
                       overflow: "hidden",
