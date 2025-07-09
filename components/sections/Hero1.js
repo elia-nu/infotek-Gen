@@ -36,11 +36,9 @@ const Hero1 = memo(function Hero1() {
 
   return (
     <section
-      className="hero-section fix hero-1 bg-cover"
+      className="hero-section fix hero-1 bg-cover h-fit sm:h-[80hv]  pb-10 "
       style={{
         backgroundImage: `url("${heroData.images.background}")`,
-        height: "80vh ",
-        maxHeight: "900px",
       }}
     >
       <div className="text-transparent">
@@ -65,16 +63,16 @@ const Hero1 = memo(function Hero1() {
           loading="eager"
         />
       </div>
-      <div className="frame-shape">
+      <div className="frame-shape md:block hidden">
         <Image
           src={heroData.images.shapes.frame}
           alt="shape"
-          width={200}
-          height={200}
+          width={100}
+          height={100}
           loading="eager"
         />
       </div>
-      <div className="mask-shape wow fadeInRight" data-wow-delay=".7s">
+      <div className="mask-shape wow fadeInRight" data-wow-delay=".7s z-1">
         <Image
           src={heroData.images.shapes.mask}
           alt="shape"
