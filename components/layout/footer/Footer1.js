@@ -48,6 +48,12 @@ export default function Footer1() {
                       <Link href={`${contact[0]?.facebook}`} target="_blank">
                         <i className="fab fa-facebook-f" />
                       </Link>
+                      <Link
+                        href={`https://www.instagram.com/genshiftertech_usa?igsh=aXE3ZWoyaW5xYmxi&utm_source=qr`}
+                        target="_blank"
+                      >
+                        <i className="fab fa-instagram" />
+                      </Link>
                       <Link href={`${contact[0]?.twitter}`} target="_blank">
                         <i className="fab fa-twitter" />
                       </Link>
@@ -140,9 +146,25 @@ export default function Footer1() {
                   <div className="footer-content">
                     <ul className="contact-info">
                       <li>
+                        <img
+                          src="/assets/img/header/eth.png"
+                          alt="Ethiopia Flag"
+                          style={{ width: "40px", marginRight: "8px" }}
+                        />
                         <i className="fas fa-map-marker-alt" />
                         {contact[0]?.address}
                       </li>
+                      <li>
+                        <img
+                          src="/assets/img/header/usa.png"
+                          alt="USA Flag"
+                          style={{ width: "40px", marginRight: "8px" }}
+                        />
+                        <i className="fas fa-map-marker-alt" />
+                        7740 Delridge Way SW Apt A, Seattle, WA, 98106-1738,
+                        United States
+                      </li>
+
                       <li>
                         <i className="fa-regular fa-envelope" />
                         <Link href={`mailto:${contact[0]?.email}`}>

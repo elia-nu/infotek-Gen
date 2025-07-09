@@ -67,7 +67,7 @@ export default function Team() {
       name: "Yosef Birri",
       jobTitle: "Project Manager",
       location: "USA",
-      image: "/assets/img/team/team59.jpg",
+      image: "/assets/img/team/team55.jpg",
       facebook: "https://facebook.com",
       instagram: "mailto:yosefbirri@genshifter.com",
       linkedin:
@@ -77,18 +77,11 @@ export default function Team() {
 
   // Filter team members by location
   // Ethiopia team comes from API
-  const ethiopiaTeam = team.filter(
-    (member) => member.name !== "Boni Birassa" && member.name !== "Dawit Haile"
-  );
-  const ethiopiaTeams = team;
+  const ethiopiaTeam = team;
   // USA team is hardcoded
-  const ethiopiaFilteredTeam = team.filter(
-    (member) => member.name === "Boni Birassa" || member.name === "Dawit Haile"
-  );
-  const usaTeam = [...ethiopiaFilteredTeam, ...usaTeamData];
-
+  const usaTeam = usaTeamData;
   // Combine both teams for "all" view
-  const allTeam = [...ethiopiaTeams, ...usaTeamData];
+  const allTeam = [...ethiopiaTeam, ...usaTeam];
 
   // Function to determine which team to display based on active tab
   const getDisplayTeam = () => {
@@ -170,7 +163,7 @@ export default function Team() {
                 justifyContent: "center",
               }}
             >
-              <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5">
+              <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-5">
                 {displayTeam.length > 0 ? (
                   displayTeam.map((member, index) => (
                     <div
@@ -178,9 +171,9 @@ export default function Team() {
                       data-wow-delay={`${0.2 * (index + 3)}s`}
                       key={index}
                     >
-                      <div className="single-team-items bg-black shadow-lg rounded-lg">
+                      <div className="single-team-items">
                         <div
-                          className="team-image max-w-[350px] max-h-[350px]"
+                          className="team-image"
                           style={{
                             height: "350px",
                             width: "100%",
@@ -203,31 +196,7 @@ export default function Team() {
                               objectFit: "cover",
                               objectPosition: "top",
                             }}
-                            className="bg-black rounded-lg"
                           />
-                          <div className="absolute top-2 right-2 w-fit h-fit bg-black rounded-lg">
-                            <div className="flex justify-end">
-                              <span className="   text-white flex items-center pt-1  px-2 pb-1">
-                                <img
-                                  src={
-                                    member.location === "USA" ||
-                                    member.name === "Boni Birassa" ||
-                                    member.name === "Dawit Haile"
-                                      ? "/assets/img/header/usa.png"
-                                      : "/assets/img/header/eth.png"
-                                  }
-                                  alt="USA"
-                                  className="mr-2 "
-                                  style={{ width: "20px", height: "20px" }}
-                                />{" "}
-                                {member.location === "USA" ||
-                                member.name === "Boni Birassa" ||
-                                member.name === "Dawit Haile"
-                                  ? "USA"
-                                  : "Ethiopia"}
-                              </span>
-                            </div>
-                          </div>
                           <div className="social-profile">
                             <ul>
                               {member.facebook && (
@@ -259,6 +228,23 @@ export default function Team() {
                         <div className="team-content text-center text-xs">
                           <h4 style={{ color: "white" }}>{member.name}</h4>
                           <p>{member.jobTitle}</p>
+                          <div
+                            style={{
+                              display: "flex",
+                              justifyContent: "flex-end",
+                            }}
+                          >
+                            <span
+                              className="team-location"
+                              style={{
+                                color: "white",
+                                fontSize: "14px",
+                              }}
+                            >
+                              <i className="fas fa-map-marker-alt mr-2 mt-4"></i>{" "}
+                              {member.location || "Ethiopia"}
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </div>
