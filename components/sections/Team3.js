@@ -1,8 +1,23 @@
 "use client";
 import Link from "next/link";
 import useStore from "../../store/store";
+import { toast } from "react-hot-toast";
 export default function Team3() {
   const { team } = useStore();
+
+  const copyEmailToClipboard = (email) => {
+    // Extract email from mailto: link
+    navigator.clipboard
+      .writeText(email)
+      .then(() => {
+        toast.success("Email copied to clipboard!");
+      })
+      .catch((err) => {
+        toast.error("Failed to copy email");
+        console.error("Copy failed: ", err);
+      });
+  };
+
   const teamMembers = [
     {
       name: "Mekdelawit Mamushet",
@@ -107,8 +122,14 @@ export default function Team3() {
                             </Link>
                           </li>*/}
                           <li>
-                            <Link href="https://twitter.com">
-                              <i className="fa-solid fa-envelope" />{" "}
+                            <Link
+                              href="#"
+                              onClick={(e) => {
+                                e.preventDefault();
+                                copyEmailToClipboard(member.instagram);
+                              }}
+                            >
+                              <i className="fa-solid fa-envelope" />
                             </Link>
                           </li>
                           <li>
