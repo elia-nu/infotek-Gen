@@ -78,12 +78,12 @@ export default function Team() {
   // Filter team members by location
   // Ethiopia team comes from API
   const ethiopiaTeam = team.filter(
-    (member) => member.name !== "Boni Birassa" && member.name !== "Dawit Haile"
+    (member) => member.name !== "Boni Aliko" && member.name !== "Dawit Haile"
   );
   const ethiopiaTeams = team;
   // USA team is hardcoded
   const ethiopiaFilteredTeam = team.filter(
-    (member) => member.name === "Boni Birassa" || member.name === "Dawit Haile"
+    (member) => member.name === "Boni Aliko" || member.name === "Dawit Haile"
   );
   const usaTeam = [...ethiopiaFilteredTeam, ...usaTeamData];
 
@@ -211,7 +211,7 @@ export default function Team() {
                                 <img
                                   src={
                                     member.location === "USA" ||
-                                    member.name === "Boni Birassa" ||
+                                    member.name === "Boni Aliko" ||
                                     member.name === "Dawit Haile"
                                       ? "/assets/img/header/usa.png"
                                       : "/assets/img/header/eth.png"
