@@ -31,7 +31,7 @@ export default function Team() {
       location: "USA",
       image: "/assets/img/team/team58.jpg",
       facebook: "https://facebook.com",
-      instagram: "mailto:muazabdulla@genshifter.com",
+      instagram: "muazabdulla@genshifter.com",
       linkedin:
         "https://www.linkedin.com/in/muazabdulla?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
@@ -41,7 +41,7 @@ export default function Team() {
       location: "USA",
       image: "/assets/img/team/team57.jpg",
       facebook: "https://facebook.com",
-      instagram: "mailto:leuldemelie@genshifter.com",
+      instagram: "leuldemelie@genshifter.com",
       linkedin: "https://www.linkedin.com/in/leuld",
     },
     {
@@ -50,26 +50,26 @@ export default function Team() {
       location: "USA",
       image: "/assets/img/team/team56.jpg",
       facebook: "https://facebook.com",
-      instagram: "mailto:michaelbekele@genshifter.com",
+      instagram: "michaelbekele@genshifter.com",
       linkedin: "https://www.linkedin.com/in/michael-shiferaw",
     },
     {
-      name: "Eyouel Berhe , MBA",
-      jobTitle: "Project Manager",
+      name: "Eyouel Berhe (MBA)",
+      jobTitle: "Project Portfolio Manager",
       location: "USA",
       image: "/assets/img/team/team55.jpg",
       facebook: "https://facebook.com",
-      instagram: "mailto:eyouelberhe@genshifter.com",
+      instagram: "eyouelberhe@genshifter.com",
       linkedin:
         "https://www.linkedin.com/in/eyouelberhe?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     },
     {
       name: "Yosef Birri",
-      jobTitle: "Project Manager",
+      jobTitle: "GIS Analyst Intern",
       location: "USA",
       image: "/assets/img/team/team59.jpg",
       facebook: "https://facebook.com",
-      instagram: "mailto:yosefbirri@genshifter.com",
+      instagram: "yosefbirri@genshifter.com",
       linkedin:
         "https://www.linkedin.com/in/yosef-birri-4486b2183?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     },
@@ -205,9 +205,9 @@ export default function Team() {
                             }}
                             className="bg-black rounded-lg"
                           />
-                          <div className="absolute top-2 right-2 w-fit h-fit bg-black rounded-lg">
+                          <div className="absolute top-2 right-2 w-fit h-fit bg-black/0 rounded-lg">
                             <div className="flex justify-end">
-                              <span className="   text-white flex items-center pt-1  px-2 pb-1">
+                              <span className="   text-white text-xs flex items-center pt-1  px-2 pb-1">
                                 <img
                                   src={
                                     member.location === "USA" ||
@@ -217,14 +217,9 @@ export default function Team() {
                                       : "/assets/img/header/eth.png"
                                   }
                                   alt="USA"
-                                  className="mr-2 "
-                                  style={{ width: "20px", height: "20px" }}
+                                  className="mr-1 "
+                                  style={{ width: "24px", height: "24px" }}
                                 />{" "}
-                                {member.location === "USA" ||
-                                member.name === "Boni Birassa" ||
-                                member.name === "Dawit Haile"
-                                  ? "USA"
-                                  : "Ethiopia"}
                               </span>
                             </div>
                           </div>

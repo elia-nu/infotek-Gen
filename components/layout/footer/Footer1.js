@@ -54,6 +54,12 @@ export default function Footer1() {
                       >
                         <i className="fab fa-instagram" />
                       </Link>
+                      <Link
+                        href={`https://www.tiktok.com/@genshifter_technologies`}
+                        target="_blank"
+                      >
+                        <i className="fab fa-tiktok" />
+                      </Link>
                       <Link href={`${contact[0]?.twitter}`} target="_blank">
                         <i className="fab fa-twitter" />
                       </Link>
