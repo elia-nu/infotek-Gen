@@ -7,72 +7,70 @@ import ProjectSlider2 from "@/components/slider/ProjectSlider2";
 import Link from "next/link";
 import useStore from "../../store/store";
 import { useEffect } from "react";
+import { API_BASE_URL } from "../../config/constants";
 export default function About() {
   const { about, why_choose_us, who_we_are, our_goal } = useStore();
   const { setAbout, setWhyChooseUs, setWhoWeAre, setOurGoal } = useStore();
   console.log(why_choose_us, "dad");
 
-  console.log(
-    `https://admin.z.genshifter.com/${about[0]?.aboutImg2}`,
-    "dad"
-  );
+  console.log(`${API_BASE_URL}/${about[0]?.aboutImg2}`, "dad");
   useEffect(() => {
     const fetchAbout = async () => {
-        try {
-            const response = await fetch(`https://admin.z.genshifter.com/api/about`);
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            const data = await response.json();
-            setAbout(data);
-        } catch (error) {
-            console.error('Error fetching career data:', error);
+      try {
+        const response = await fetch(`${API_BASE_URL}/api/about`);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
         }
+        const data = await response.json();
+        setAbout(data);
+      } catch (error) {
+        console.error("Error fetching career data:", error);
+      }
     };
     const fetchWhyChooseUs = async () => {
       try {
-          const response = await fetch(`https://admin.z.genshifter.com/api/why-choose-us`);
-          if (!response.ok) {
-              throw new Error(`HTTP error! status: ${response.status}`);
-          }
-          const data = await response.json();
-            setWhyChooseUs(data);
-      } catch (error) {
-          console.error('Error fetching career data:', error);
-      }
-  };
-
-  const fetchWhoWeAre = async () => {
-    try {
-        const response = await fetch(`https://admin.z.genshifter.com/api/who-we-are`);
+        const response = await fetch(`${API_BASE_URL}/api/why-choose-us`);
         if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+          throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
-          setWhoWeAre(data);
-    } catch (error) {
-        console.error('Error fetching career data:', error);
-    }
-};
-
-const fetchOurGoal = async () => {
-  try {
-      const response = await fetch(`https://admin.z.genshifter.com/api/our-goal`);
-      if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
+        setWhyChooseUs(data);
+      } catch (error) {
+        console.error("Error fetching career data:", error);
       }
-      const data = await response.json();
-      setOurGoal(data);
-  } catch (error) {
-      console.error('Error fetching career data:', error);
-  }
-};
+    };
 
-      fetchOurGoal();
-      fetchWhyChooseUs();
-      fetchWhoWeAre();
-      fetchAbout();
-}, [setOurGoal, setWhyChooseUs, setWhoWeAre, setAbout]);
+    const fetchWhoWeAre = async () => {
+      try {
+        const response = await fetch(`${API_BASE_URL}/api/who-we-are`);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        setWhoWeAre(data);
+      } catch (error) {
+        console.error("Error fetching career data:", error);
+      }
+    };
+
+    const fetchOurGoal = async () => {
+      try {
+        const response = await fetch(`${API_BASE_URL}/api/our-goal`);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        setOurGoal(data);
+      } catch (error) {
+        console.error("Error fetching career data:", error);
+      }
+    };
+
+    fetchOurGoal();
+    fetchWhyChooseUs();
+    fetchWhoWeAre();
+    fetchAbout();
+  }, [setOurGoal, setWhyChooseUs, setWhoWeAre, setAbout]);
 
   const data = [
     {
@@ -126,7 +124,6 @@ const fetchOurGoal = async () => {
     },
   ];
 
-  
   const goals = [
     {
       icon: "🎯",
@@ -211,7 +208,7 @@ const fetchOurGoal = async () => {
                           data-wow-delay=".5s"
                         >
                           <img
-                            src={`https://admin.z.genshifter.com/${about[0]?.aboutImg2}`}
+                            src={`${API_BASE_URL}/${about[0]?.aboutImg2}`}
                             alt="about-img"
                           />
                         </div>
@@ -262,7 +259,7 @@ const fetchOurGoal = async () => {
                               }}
                             >
                               <img
-                                src={`https://admin.z.genshifter.com/${item.icon}`}
+                                src={`${API_BASE_URL}/${item.icon}`}
                                 alt="icon-img"
                                 className="mx-auto"
                               />
@@ -323,9 +320,9 @@ const fetchOurGoal = async () => {
                           {item.description}
                         </p>
                       </div>
-                    <div className="d-flex flex-column align-items-start justify-content-start">
-                     {/*   <img
-                          src={`https://admin.z.genshifter.com/${item.icon}`}
+                      <div className="d-flex flex-column align-items-start justify-content-start">
+                        {/*   <img
+                          src={`${API_BASE_URL}/${item.icon}`}
                           alt="Icon"
                           style={{
                             height: "4rem",
@@ -333,8 +330,8 @@ const fetchOurGoal = async () => {
                             filter: "hue-rotate(30deg) saturate(100%)",
                           }}
                         />
-                      */} 
-                       <img
+                      */}
+                        <img
                           src={item.icon}
                           alt="Icon"
                           style={{
@@ -342,8 +339,8 @@ const fetchOurGoal = async () => {
                             width: "20rem",
                             filter: "hue-rotate(30deg) saturate(100%)",
                           }}
-                        /> 
-                        </div>
+                        />
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -353,7 +350,7 @@ const fetchOurGoal = async () => {
                   data-wow-delay=".5s"
                 >
                   <img
-                    src={`https://admin.z.genshifter.com/${why_choose_us[0]?.img}`}
+                    src={`${API_BASE_URL}/${why_choose_us[0]?.img}`}
                     alt="Why Choose Us"
                     style={{
                       height: "400px",
@@ -371,8 +368,8 @@ const fetchOurGoal = async () => {
                       data-wow-delay=".5s"
                     >
                       <div className="d-flex flex-column align-items-start justify-content-start">
-                          {/*   <img
-                          src={`https://admin.z.genshifter.com/${item.icon}`}
+                        {/*   <img
+                          src={`${API_BASE_URL}/${item.icon}`}
                           alt="Icon"
                           style={{
                             height: "4rem",
@@ -380,8 +377,8 @@ const fetchOurGoal = async () => {
                             filter: "hue-rotate(30deg) saturate(100%)",
                           }}
                         />
-                      */} 
-                       <img
+                      */}
+                        <img
                           src={item.icon}
                           alt="Icon"
                           style={{
@@ -389,7 +386,7 @@ const fetchOurGoal = async () => {
                             width: "20rem",
                             filter: "hue-rotate(30deg) saturate(100%)",
                           }}
-                        /> 
+                        />
                       </div>
                       <div>
                         <h2
@@ -436,7 +433,7 @@ const fetchOurGoal = async () => {
                   >
                     <div className="col-8 h-100 pe-2">
                       <img
-                        src={`https://admin.z.genshifter.com/${who_we_are[0]?.img[0]}`}
+                        src={`${API_BASE_URL}/${who_we_are[0]?.img[0]}`}
                         alt="GenShifter team"
                         className="img-fluid h-100 w-100 rounded shadow"
                         style={{ objectFit: "cover" }}
@@ -444,13 +441,13 @@ const fetchOurGoal = async () => {
                     </div>
                     <div className="col-4 h-100 d-flex flex-column">
                       <img
-                        src={`https://admin.z.genshifter.com/${who_we_are[0]?.img[1]}`}
+                        src={`${API_BASE_URL}/${who_we_are[0]?.img[1]}`}
                         alt="Office space"
                         className="img-fluid mb-2 rounded shadow"
                         style={{ objectFit: "cover", height: "50%" }}
                       />
                       <img
-                        src={`https://admin.z.genshifter.com/${who_we_are[0]?.img[2]}`}
+                        src={`${API_BASE_URL}/${who_we_are[0]?.img[2]}`}
                         alt="Project meeting"
                         className="img-fluid rounded shadow"
                         style={{ objectFit: "cover", height: "50%" }}
@@ -535,8 +532,7 @@ const fetchOurGoal = async () => {
                           className="mb-3"
                           style={{ fontSize: "1.875rem", color: "#ea8c06" }}
                         >
-                        🎯
-
+                          🎯
                         </div>
                         <h3
                           className="mb-2"

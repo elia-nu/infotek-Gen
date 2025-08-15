@@ -5,6 +5,7 @@ import Link from "next/link";
 import useStore from "../../store/store";
 import { useState } from "react";
 import Swal from "sweetalert2";
+import { API_BASE_URL } from "../../config/constants";
 
 export default function Contact() {
   const { contact } = useStore();
@@ -18,16 +19,13 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(
-        `https://admin.z.genshifter.com/api/contact-us`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
+      const response = await fetch(`${API_BASE_URL}/api/contact-us`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
       if (response.ok) {
         Swal.fire({
           icon: "success",
