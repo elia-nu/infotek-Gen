@@ -4,6 +4,7 @@ import Link from "next/link";
 import useStore from "../../store/store";
 import { useState } from "react";
 import { toast } from "react-hot-toast";
+import { API_BASE_URL } from "../../config/constants";
 
 export default function Team() {
   const { team } = useStore();
@@ -194,7 +195,7 @@ export default function Team() {
                                 ? `/assets/img/team/${member.image
                                     .split("/")
                                     .pop()}`
-                                : `https://admin.z.genshifter.com/${member.image}`
+                                : `${API_BASE_URL}/${member.image}`
                             }
                             alt={member.name}
                             style={{

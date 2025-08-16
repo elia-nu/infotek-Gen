@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import useStore from "../../store/store";
+import { API_BASE_URL } from "../../config/constants";
 export default function Team3() {
   const { team } = useStore();
   const teamMembers = [
@@ -90,7 +91,7 @@ export default function Team3() {
                       }}
                     >
                       <img
-                        src={`https://admin.z.genshifter.com/${member.image}`}
+                        src={`${API_BASE_URL}/${member.image}`}
                         alt="team-img"
                         style={{
                           width: "100%",

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import useStore from "../../store/store";
 import Swal from "sweetalert2";
+import { API_BASE_URL } from "../../config/constants";
 
 export default function Career() {
   const { career, setCareer } = useStore();
@@ -23,9 +24,7 @@ export default function Career() {
   useEffect(() => {
     const fetchCareer = async () => {
       try {
-        const response = await fetch(
-          `https://admin.z.genshifter.com/api/career`
-        );
+        const response = await fetch(`${API_BASE_URL}/api/career`);
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -52,13 +51,10 @@ export default function Career() {
     }
 
     try {
-      const response = await fetch(
-        `https://admin.z.genshifter.com/api/career-applicant`,
-        {
-          method: "POST",
-          body: data,
-        }
-      );
+      const response = await fetch(`${API_BASE_URL}/api/career-applicant`, {
+        method: "POST",
+        body: data,
+      });
 
       if (response.ok) {
         Swal.fire({
