@@ -108,6 +108,12 @@ export default function Footer1() {
                       </Link>
                     </li>
                     <li>
+                      <Link href="/blogs">
+                        <i className="fa-solid fa-chevron-right" />
+                        Blogs
+                      </Link>
+                    </li>
+                    <li>
                       <Link href="/career">
                         <i className="fa-solid fa-chevron-right" />
                         Careers
