@@ -29,10 +29,16 @@ export default function Menu() {
             <li>
               <Link href="/career">Careers</Link>
             </li>
+
+            <li>
+              <Link href="/consultation">Consultation</Link>
+            </li>
+
             {/* 
         <li>
           <Link href="/blogs">Blogs</Link>
         </li>*/}
+
           </ul>
         </li>
         <li>
