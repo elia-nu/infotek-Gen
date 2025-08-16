@@ -29,13 +29,14 @@ export default function Menu() {
             <li>
               <Link href="/career">Careers</Link>
             </li>
+            {/* 
+        <li>
+          <Link href="/blogs">Blogs</Link>
+        </li>*/}
           </ul>
         </li>
         <li>
           <Link href="/project">Projects</Link>
-        </li>
-        <li>
-          <Link href="/blogs">Blogs</Link>
         </li>
         <li>
           <Link href="/contact">Contact Us</Link>

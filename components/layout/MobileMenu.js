@@ -60,6 +60,10 @@ export default function MobileMenu() {
                   <li>
                     <Link href="/career">Careers</Link>
                   </li>
+                  {/* 
+        <li>
+          <Link href="/blogs">Blogs</Link>
+        </li>*/}
                 </ul>
                 <a
                   className={`mean-expand ${
@@ -76,9 +80,7 @@ export default function MobileMenu() {
                   <i className="fas fa-angle-down" />
                 </Link>
               </li>
-              <li>
-                <Link href="/blogs">Blogs</Link>
-              </li>
+
               <li className="mean-last">
                 <Link href="/contact">Contact Us</Link>
               </li>
