@@ -4,6 +4,7 @@ import { useSearchParams } from "next/navigation";
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
+import { API_BASE_URL } from "../../config/constants";
 
 export default function BlogDetails() {
   const [blogPost, setBlogPost] = useState(null);
@@ -21,7 +22,7 @@ export default function BlogDetails() {
   const fetchBlogPost = async (id) => {
     try {
       setLoading(true);
-      const response = await fetch(`http://localhost:5000/api/blog/${id}`);
+      const response = await fetch(`${API_BASE_URL}/api/blog/${id}`);
       if (!response.ok) {
         throw new Error("Failed to fetch blog post");
       }

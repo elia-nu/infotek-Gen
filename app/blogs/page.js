@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
-
+import { API_BASE_URL } from "../../config/constants";
 export default function Blogs() {
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -15,7 +15,7 @@ export default function Blogs() {
   const fetchBlogs = async () => {
     try {
       setLoading(true);
-      const response = await fetch("http://localhost:5000/api/blog");
+      const response = await fetch(`${API_BASE_URL}/api/blog`);
       if (!response.ok) {
         throw new Error("Failed to fetch blogs");
       }
