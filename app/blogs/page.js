@@ -106,7 +106,8 @@ export default function Blogs() {
             <img
               src={
                 blog.image1
-                  ? `http://localhost:5000/${blog.image1}`
+                  ? `
+https://admin.z.genshifter.com/${blog.image1}`
                   : "/assets/img/news/04.jpg"
               }
               alt="blog-img"

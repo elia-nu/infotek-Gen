@@ -128,7 +128,8 @@ export default function BlogDetails() {
                     <div className="blog-hero-section position-relative mb-4">
                       <div className="blog-hero-image">
                         <img
-                          src={`http://localhost:5000/${blogPost.image1}`}
+                          src={`
+https://admin.z.genshifter.com/${blogPost.image1}`}
                           alt="Blog Hero Image"
                           className="w-100 rounded-3"
                           style={{ height: "400px", objectFit: "cover" }}
@@ -427,7 +428,8 @@ export default function BlogDetails() {
                             <div className="col-lg-6">
                               <div className="gallery-item">
                                 <img
-                                  src={`http://localhost:5000/${blogPost.image2}`}
+                                  src={`
+https://admin.z.genshifter.com/${blogPost.image2}`}
                                   alt="Blog Image 2"
                                   className="w-100 rounded-3 shadow-sm"
                                   style={{
@@ -442,7 +444,8 @@ export default function BlogDetails() {
                             <div className="col-lg-6">
                               <div className="gallery-item">
                                 <img
-                                  src={`http://localhost:5000/${blogPost.image3}`}
+                                  src={`
+https://admin.z.genshifter.com/${blogPost.image3}`}
                                   alt="Blog Image 3"
                                   className="w-100 rounded-3 shadow-sm"
                                   style={{
