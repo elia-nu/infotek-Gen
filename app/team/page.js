@@ -47,7 +47,7 @@ export default function Team() {
     },
     {
       name: "Michael Bekele Shiferaw ",
-      jobTitle: "Full Stack Develope",
+      jobTitle: "Full Stack Developer",
       location: "USA",
       image: "/assets/img/team/team56.jpg",
       facebook: "https://facebook.com",
