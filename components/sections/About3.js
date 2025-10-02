@@ -71,20 +71,22 @@ export default function About3() {
       >
         <div className="container">
           <div className="about-wrapper-2">
-            <div className="row">
-              <div className="col-lg-6 wow fadeInUp" data-wow-delay=".4s">
+            <div className="row gap-8">
+              <div className="col-lg-5 wow fadeInUp" data-wow-delay=".4s">
                 <div className="about-image">
-                  <div className="circle-shape">
-                    <img src="/assets/img/about/circle.png" alt="shape-img" />
-                  </div>
-                  <img
-                    src="/assets/img/about/00.png"
-                    style={{ borderRadius: "20px 580px 10px 230px" }}
-                    alt="about-img"
+                  <iframe
+                    src="https://www.youtube.com/embed/E5EzLvdvv_U?autoplay=1&mute=1&loop=1&playlist=E5EzLvdvv_U&controls=0&modestbranding=1&rel=0&playsinline=1"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    style={{
+                      borderRadius: "20px",
+                      width: "100%",
+                      height: "100%",
+                      aspectRatio: "16/9",
+                    }}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
                   />
-                  <div className="video-box">
-                    <VideoPopup style={1} />
-                  </div>
                 </div>
               </div>
               <div className="col-lg-6 mt-4 mt-lg-0">
