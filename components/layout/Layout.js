@@ -13,6 +13,8 @@ import Header1 from "./header/Header1";
 import Header2 from "./header/Header2";
 import Header3 from "./header/Header3";
 import Header4 from "./header/Header4";
+import Preloader from "../elements/Preloader";
+import MaintenancePage from "../elements/MaintenancePage";
 import useStore from "../../store/store";
 import { API_BASE_URL } from "../../config/constants";
 export default function Layout({
@@ -23,6 +25,8 @@ export default function Layout({
   children,
 }) {
   const [scroll, setScroll] = useState(0);
+  const [isInfoLoading, setIsInfoLoading] = useState(true);
+  const [hasInfoError, setHasInfoError] = useState(false);
 
   const [isOffCanvas, setOffCanvas] = useState(false);
   const handleOffCanvas = () => setOffCanvas(!isOffCanvas);
@@ -66,6 +70,8 @@ export default function Layout({
 
     if (!apiUrl) {
       console.error("API URL not configured");
+      setHasInfoError(true);
+      setIsInfoLoading(false);
       return;
     }
 
@@ -99,7 +105,7 @@ export default function Layout({
       ];
 
       endpoints.forEach((endpoint) => {
-        fetch(`${apiUrl}${endpoint.url}`)
+        const request = fetch(`${apiUrl}${endpoint.url}`)
           .then((response) => {
             if (!response.ok) {
               throw new Error("Network response was not ok");
@@ -110,9 +116,18 @@ export default function Layout({
             endpoint.setter(data);
             console.log(`${endpoint.name} data loaded:`, data);
           })
-          .catch((error) =>
-            console.error(`Error fetching ${endpoint.name}:`, error)
-          );
+          .catch((error) => {
+            console.error(`Error fetching ${endpoint.name}:`, error);
+            if (endpoint.name === "Info") {
+              setHasInfoError(true);
+            }
+          });
+
+        if (endpoint.name === "Info") {
+          request.finally(() => {
+            setIsInfoLoading(false);
+          });
+        }
       });
     };
 
@@ -134,6 +149,14 @@ export default function Layout({
     setWhoWeAre,
     setOurGoal,
   ]);
+
+  if (isInfoLoading) {
+    return <Preloader />;
+  }
+
+  if (hasInfoError) {
+    return <MaintenancePage />;
+  }
 
   return (
     <>
