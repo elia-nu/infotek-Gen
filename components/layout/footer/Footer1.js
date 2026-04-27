@@ -43,7 +43,7 @@ export default function Footer1() {
                     </Link>
                   </div>
                   <div className="footer-content">
-                    <p>{info[0]?.howWeWork}</p>
+                    <p>{info[0]?.howWeWork || "GenShifter Technologies is a U.S.-based IT company headquartered in Seattle, Washington, with a growing branch in Addis Ababa, Ethiopia. As a product- and service-based company, we specialize in driving digital transformation for both public and private sector clients. Our clients range from startups and small businesses to global enterprises."}</p>
                     <div className="social-icon d-flex align-items-center">
                       <Link href={`${contact[0]?.facebook}`} target="_blank">
                         <i className="fab fa-facebook-f" />

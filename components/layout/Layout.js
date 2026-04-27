@@ -49,7 +49,6 @@ export default function Layout({
     });
   }, []);
   const {
-    info,
     setTeam,
     setTestimonials,
     setPartner,
@@ -156,12 +155,6 @@ export default function Layout({
   }
 
   if (hasInfoError) {
-    return <MaintenancePage />;
-  }
-
-  const isInfoEmpty = !Array.isArray(info) || info.length === 0;
-
-  if (isInfoEmpty) {
     return <MaintenancePage />;
   }
 
